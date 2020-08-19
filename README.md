@@ -15,7 +15,7 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
 
 These are the exam objectives you review and understand in order to pass the test.
 
-* [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum)
+* [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum_%20v1.19%20Coming%20Soon%20November%202020.pdf)
 
 
 ### 10% - [Cluster Setup](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
