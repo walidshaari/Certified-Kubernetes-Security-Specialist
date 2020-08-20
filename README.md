@@ -79,6 +79,7 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [InGuardians/Jay Beale: Kubernetes Practical attacks and defenses](https://youtu.be/LtCx3zZpOfs)
 1. [Google/Ian Lewis : Kubernetes security best practices](https://youtu.be/wqsUfvRyYpw)
 1. [kubernetes goat](https://github.com/madhuakula/kubernetes-goat)
+1. [securekubernetes ](https://securekubernetes.com/)
 
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
