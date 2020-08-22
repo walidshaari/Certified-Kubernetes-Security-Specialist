@@ -76,10 +76,11 @@ These are the exam objectives you review and understand in order to pass the tes
 ### Extra Kubernetes security resources
 1. [Aquasecurity Blogs](https://blog.aquasec.com/)
 1. [control-plane/Andrew Martin @sublimino: 11 ways not to get hacked](https://control-plane.io/posts/11-ways-not-to-get-hacked/)
+1. [How to Train your Red Team (for Cloud Native) - Andrew Martin, ControPlane](https://youtu.be/LJrSAPUNHvE)
 1. [InGuardians/Jay Beale: Kubernetes Practical attacks and defenses](https://youtu.be/LtCx3zZpOfs)
 1. [Google/Ian Lewis : Kubernetes security best practices](https://youtu.be/wqsUfvRyYpw)
 1. [kubernetes goat](https://github.com/madhuakula/kubernetes-goat)
 1. [securekubernetes ](https://securekubernetes.com/)
-
+1. [Simulator: A distributed systems and infrastructure simulator for attacking and debugging Kubernetes](https://github.com/kubernetes-simulator/simulator)
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
