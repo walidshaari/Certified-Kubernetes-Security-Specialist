@@ -74,6 +74,7 @@ These are the exam objectives you review and understand in order to pass the tes
 
 
 ### Extra Kubernetes security resources
+1. [kubernetes-security.info](https://kubernetes-security.info/)
 1. [Aquasecurity Blogs](https://blog.aquasec.com/)
 1. [control-plane/Andrew Martin @sublimino: 11 ways not to get hacked](https://control-plane.io/posts/11-ways-not-to-get-hacked/)
 1. [How to Train your Red Team (for Cloud Native) - Andrew Martin, ControPlane](https://youtu.be/LJrSAPUNHvE)
