@@ -72,6 +72,16 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Ensure immutability of containers at runtime]()
 1. [Use Audit Logs to monitor access]()
 
+### Slack
+[Kubernetes Community Slack channel - #cks-exam-prep](kubernetes.slack.com)
+
+### Books
+[Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
+
+### Security Training
+1.[Andrew Martin Control Plane Security training](https://control-plane.io/training/)
+1.[Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
+1.[cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
 
 ### Extra Kubernetes security resources
 1. [kubernetes-security.info](https://kubernetes-security.info/)
@@ -83,5 +93,6 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [kubernetes goat](https://github.com/madhuakula/kubernetes-goat)
 1. [securekubernetes ](https://securekubernetes.com/)
 1. [Simulator: A distributed systems and infrastructure simulator for attacking and debugging Kubernetes](https://github.com/kubernetes-simulator/simulator)
+
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
