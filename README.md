@@ -19,58 +19,58 @@ These are the exam objectives you review and understand in order to pass the tes
 
 
 ### 10% - [Cluster Setup](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
-1. [Use Network security policies to restrict cluster level access]()
-1. [Use CIS benchmark to review the security configuration of Kubernetes components]()
+1. [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+1. [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)
  (etcd, kubelet, kubedns, kubeapi)
-1. [Properly set up Ingress objects with security control]()
-1. [Protect node metadata and endpoints]()
-1. [Minimize use of, and access to, GUI elements]()
-1. [Verify platform binaries before deploying]()
+1. Properly set up Ingress objects with security control
+1. Protect node metadata and endpoints
+1. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
+1. Verify platform binaries before deploying
 
 ### 15% - Cluster Hardening
-1. [Restrict access to Kubernetes API]()
-1. [Use Role Based Access Controls to minimize exposure]()
+1. [Restrict access to Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
+1. [Use Role Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
     * [handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
-1. [Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones]()
-1. [Update Kubernetes frequently]()
-1. [Minimize host OS footprint (reduce attack surface)]()
-1. [Minimize IAM roles]()
-1. [Minimize external access to the network]()
-1. [Appropriately use kernel hardening tools such as AppArmor, seccomp]()
+1. Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
+1. Update Kubernetes frequently
+1. Minimize host OS footprint (reduce attack surface)
+1. Minimize IAM roles
+1. Minimize external access to the network
+1. Appropriately use kernel hardening tools such as AppArmor, seccomp
 
 
 ### 15% System Hardening
 
-1. [Minimize host OS footprint (reduce attack surface)]()
-1. [Minimize IAM roles]()
-1. [Minimize external access to the network]()
-1. [Appropriately use kernel hardening tools such as AppArmor, seccomp]()
+1. Minimize host OS footprint (reduce attack surface)
+1. Minimize IAM roles
+1. Minimize external access to the network
+1. Appropriately use kernel hardening tools such as AppArmor, seccomp
 
     !? where is selinux? assume exam systems are ubuntu
 
 ### 20% - Minimize Microservice Vulnerabilities
 
-1. [Setup appropriate OS level security domains e.g. using PSP, OPA, security contexts]()
-1. [Manage kubernetes secrets]()
-1. [Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)]()
-1. [Implement pod to pod encryption by use of mTLS]()
+1. Setup appropriate OS level security domains e.g. using PSP, OPA, security contexts
+1. Manage kubernetes secrets
+1. Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)
+1. Implement pod to pod encryption by use of mTLS
 
 ### 20% - Supply Chain Security
-1. [Minimize base image footprint]()
-1. [Secure your supply chain: whitelist allowed image registries, sign and validate images]()
-1. [Use static analysis of user workloads (e.g. kubernetes resources, docker files)]()
-1. [Scan images for known vulnerabilities]()
+1. Minimize base image footprint
+1. Secure your supply chain: whitelist allowed image registries, sign and validate images
+1. Use static analysis of user workloads (e.g. kubernetes resources, docker files)
+1. Scan images for known vulnerabilities
 
 
 ### 20% - Monitoring, Logging and Runtime Security
 
-1. [Perform behavioral analytics of syscall process and file activities at the host and container
- level to detect malicious activities]()
-1. [Detect threats within physical infrastructure, apps, networks, data, users and workloads]()
-1. [Detect all phases of attack regardless where it occurs and how it spreads]()
-1. [Perform deep analytical investigation and identification of bad actors within environment]()
-1. [Ensure immutability of containers at runtime]()
-1. [Use Audit Logs to monitor access]()
+1. Perform behavioral analytics of syscall process and file activities at the host and container
+ level to detect malicious activities
+1. Detect threats within physical infrastructure, apps, networks, data, users and workloads
+1. Detect all phases of attack regardless where it occurs and how it spreads
+1. Perform deep analytical investigation and identification of bad actors within environment
+1. Ensure immutability of containers at runtime
+1. Use Audit Logs to monitor access
 
 ### Slack
 [Kubernetes Community Slack channel - #cks-exam-prep](kubernetes.slack.com)
