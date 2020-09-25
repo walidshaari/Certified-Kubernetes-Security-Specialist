@@ -75,7 +75,7 @@ These are the exam objectives you review and understand in order to pass the tes
 1. Use Audit Logs to monitor access
 
 ### Slack
-[Kubernetes Community Slack channel - #cks-exam-prep](kubernetes.slack.com)
+[Kubernetes Community Slack channel - #cks-exam-prep](https://kubernetes.slack.com)
 
 ### Books
 [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
