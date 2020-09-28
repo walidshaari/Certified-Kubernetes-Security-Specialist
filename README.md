@@ -71,7 +71,7 @@ These are the exam objectives you review and understand in order to pass the tes
 2. Detect threats within physical infrastructure, apps, networks, data, users and workloads
 3. Detect all phases of attack regardless where it occurs and how it spreads
 4. Perform deep analytical investigation and identification of bad actors within environment
-5. Ensure immutability of containers at runtime
+5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
 ### Slack
