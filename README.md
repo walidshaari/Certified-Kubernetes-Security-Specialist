@@ -95,6 +95,7 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)
 1. [securekubernetes](https://securekubernetes.com/)
 1. [Simulator: A distributed systems and infrastructure simulator for attacking and debugging Kubernetes](https://github.com/kubernetes-simulator/simulator)
+1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
 
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
