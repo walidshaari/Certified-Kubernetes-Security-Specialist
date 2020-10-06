@@ -3,7 +3,7 @@
 # Certified Kubernetes Security Specialist (CKS)  
 **Coming soon November 2020**
 
-Online resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist Certification exam.
+Online resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist **CKS** Certification exam.
 
 **Disclaimer**: This is not likely a comprehensive list as the exam is not out yet, most likely will be a moving target with the fast pace of k8s development
 - please make a pull request if there something wrong or that should be added, or updated in here.
