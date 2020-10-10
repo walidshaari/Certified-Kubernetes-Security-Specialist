@@ -79,6 +79,7 @@ These are the exam objectives you review and understand in order to pass the tes
 
 ### Books
 1. [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
+1. [Learn Kubernetes security: Securely orchestrate, scale, and manage your microservices in Kubernetes deployments](https://www.amazon.com/Learn-Kubernetes-Security-orchestrate-microservices/dp/1839216506)
 
 ### Security Training
 1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
