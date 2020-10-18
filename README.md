@@ -81,10 +81,14 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
 1. [Learn Kubernetes security: Securely orchestrate, scale, and manage your microservices in Kubernetes deployments](https://www.amazon.com/Learn-Kubernetes-Security-orchestrate-microservices/dp/1839216506)
 
-### Security Training
+### Containers and Kubernetes Security Training
 1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
+1.[Tutorial: Getting Started With Cloud Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
+    - [hands-on tutorial](https://tutorial.kubernetes-security.info/)
+1. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
+1. [Killer.sh CKS practice exam](https://killer.sh/cks)
 
 ### Extra Kubernetes security resources
 1. [kubernetes-security.info](https://kubernetes-security.info/)
@@ -97,6 +101,7 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [securekubernetes](https://securekubernetes.com/)
 1. [Simulator: A distributed systems and infrastructure simulator for attacking and debugging Kubernetes](https://github.com/kubernetes-simulator/simulator)
 1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
+
 
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
