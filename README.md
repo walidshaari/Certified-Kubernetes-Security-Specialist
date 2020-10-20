@@ -1,15 +1,17 @@
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-# Certified Kubernetes Security Specialist (CKSS)  
+# Certified Kubernetes Security Specialist - CKS  
 **Coming soon November 2020**
 
 Online resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist **CKS** Certification exam.
 
 **Disclaimer**: This is not likely a comprehensive list as the exam is not out yet, most likely will be a moving target with the fast pace of k8s development
+
 - please make a pull request if there something wrong or that should be added, or updated in here.
 
-I will try to restrict the cross references of resources to [kubernetes.io](kubernetes.io) as CNCF/Linux Foundation allows you search **k8s.io**. Youtube videos and other resources e.g. blogs will be optional.
-Content is scarse, will get updates by me and other contributors as we prepare for the CKS exam journey.
+I will try to restrict the cross references of resources to [kubernetes.io](kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io** and [kuernetes github repo](https://github.com/kubernetes) only. Youtube videos and other resources e.g. blogs will be provided as an optional complimentary material.
+
+Content is scarse, will get updates by me and other contributors as we preparing for our CKS exam journey.
 
 Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 15th July announcement) especially for API objects and annotations.
 
@@ -81,6 +83,9 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
 1. [Learn Kubernetes security: Securely orchestrate, scale, and manage your microservices in Kubernetes deployments](https://www.amazon.com/Learn-Kubernetes-Security-orchestrate-microservices/dp/1839216506)
 
+### Youtube Videos
+1. [Code in Action for the **book Learn Kubernetes Security** playlist](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB)
+
 ### Containers and Kubernetes Security Training
 1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
@@ -88,7 +93,7 @@ These are the exam objectives you review and understand in order to pass the tes
 1.[Tutorial: Getting Started With Cloud Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
     - [hands-on tutorial](https://tutorial.kubernetes-security.info/)
 1. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
-1. [Killer.sh CKS practice exam](https://killer.sh/cks)
+1. [Killer.sh CKS practice exam](https://killer.sh/cks)  ==> use the code **walidshaari** for 20% discount
 
 ### Extra Kubernetes security resources
 1. [kubernetes-security.info](https://kubernetes-security.info/)
