@@ -11,7 +11,7 @@ Online resources that will help you prepare for taking the Kubernetes Certified 
 
 I will try to restrict the cross references of resources to [kubernetes.io](kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io** and [kuernetes github repo](https://github.com/kubernetes) only. Youtube videos and other resources e.g. blogs will be provided as an optional complimentary material.
 
-Content is scarse, will get updates by me and other contributors as we preparing for our CKS exam journey.
+Content is scarse, we will update as we are preparing for our **CKS exam journey**.
 
 Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 15th July announcement) especially for API objects and annotations.
 
@@ -93,7 +93,8 @@ These are the exam objectives you review and understand in order to pass the tes
 1.[Tutorial: Getting Started With Cloud Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
     - [hands-on tutorial](https://tutorial.kubernetes-security.info/)
 1. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
-1. [Killer.sh CKS practice exam](https://killer.sh/cks)  ==> use the code **walidshaari** for 20% discount
+1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
+
 
 ### Extra Kubernetes security resources
 1. [kubernetes-security.info](https://kubernetes-security.info/)
