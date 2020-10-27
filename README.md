@@ -5,15 +5,13 @@
 
 Online resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist **CKS** Certification exam.
 
-**Disclaimer**: This is not likely a comprehensive list as the exam is not out yet, most likely will be a moving target with the fast pace of k8s development
+**Disclaimer**: This is not likely a comprehensive list as the exam is not general availability **GA** yet , most likely will be a moving target with the fast pace of k8s development
 
-- please make a pull request if there something wrong or that should be added, or updated in here.
+- Please raise an issue, or make a pull request for fixes, new additions, or updates.
 
-I will try to restrict the cross references of resources to [kubernetes.io](kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io** and [kuernetes github repo](https://github.com/kubernetes) only. Youtube videos and other resources e.g. blogs will be provided as an optional complimentary material.
+I will try to restrict the cross references of resources primarly to [kubernetes.io](kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io/{docs|blog}** and [kuernetes github repo](https://github.com/kubernetes) only. Youtube videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
-Content is scarse, we will update as we are preparing for our **CKS exam journey**.
-
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 15th July announcement) especially for API objects and annotations.
+Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 15th July announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. falco install](https://github.com/kubernetes/website/issues/24184).
 
 ## Exam Objectives
 
@@ -24,7 +22,7 @@ These are the exam objectives you review and understand in order to pass the tes
 ### 10% - [Cluster Setup](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/)
 
 1. [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
-2. [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/) (etcd, kubelet, kubedns, kubeapi)
+2. :triangular_flag_on_post: [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)  (etcd, kubelet, kubedns, kubeapi)
 3. Properly set up Ingress objects with security control
 4. Protect node metadata and endpoints
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
@@ -34,7 +32,7 @@ These are the exam objectives you review and understand in order to pass the tes
 
 1. [Restrict access to Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
 2. [Use Role Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-    * [handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
+    * :triangular_flag_on_post: [handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
 3. Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
 4. Update Kubernetes frequently
 
@@ -56,14 +54,14 @@ These are the exam objectives you review and understand in order to pass the tes
    - [Open Policy Agent](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
    - [Security Contexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 2. [Manage kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
-3. Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)
+3. Use [container runtime](https://kubernetes.io/docs/concepts/containers/runtime-class/) sandboxes in multi-tenant environments (e.g. [gvisor, kata containers](https://github.com/kubernetes/enhancements/blob/5dcf841b85f49aa8290529f1957ab8bc33f8b855/keps/sig-node/585-runtime-class/README.md#examples))
 4. Implement pod to pod encryption by use of mTLS
 
 ### 20% - Supply Chain Security
 
 1. Minimize base image footprint
-2. Secure your supply chain: whitelist allowed image registries, sign and validate images
-3. Use static analysis of user workloads (e.g. kubernetes resources, docker files)
+2. Secure your supply chain: [whitelist allowed image registries](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/#why-do-i-need-admission-controllers), sign and validate images
+3. Use static analysis of user workloads (e.g. [kubernetes resources](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#7-statically-analyse-yaml), docker files)
 4. [Scan images for known vulnerabilities](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#10-scan-images-and-run-ids)
 
 
