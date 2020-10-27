@@ -111,3 +111,8 @@ These are the exam objectives you review and understand in order to pass the tes
 
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
+
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/walidshaari/Certified-Kubernetes-Security-Specialist.svg)](https://starchart.cc/walidshaari/Certified-Kubernetes-Security-Specialist)
