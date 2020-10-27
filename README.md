@@ -62,8 +62,8 @@ These are the exam objectives you review and understand in order to pass the tes
 ### 20% - Supply Chain Security
 
 1. Minimize base image footprint
-2. Secure your supply chain: whitelist allowed image registries, sign and validate images
-3. Use static analysis of user workloads (e.g. kubernetes resources, docker files)
+2. Secure your supply chain: [whitelist allowed image registries](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/#why-do-i-need-admission-controllers), sign and validate images
+3. Use static analysis of user workloads (e.g. [kubernetes resources](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#7-statically-analyse-yaml), docker files)
 4. [Scan images for known vulnerabilities](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#10-scan-images-and-run-ids)
 
 
