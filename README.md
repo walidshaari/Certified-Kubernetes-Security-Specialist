@@ -56,7 +56,7 @@ These are the exam objectives you review and understand in order to pass the tes
    - [Open Policy Agent](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
    - [Security Contexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 2. [Manage kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
-3. Use container runtime sandboxes in multi-tenant environments (e.g. gvisor, kata containers)
+3. Use [container runtime](https://kubernetes.io/docs/concepts/containers/runtime-class/) sandboxes in multi-tenant environments (e.g. [gvisor, kata containers](https://github.com/kubernetes/enhancements/blob/5dcf841b85f49aa8290529f1957ab8bc33f8b855/keps/sig-node/585-runtime-class/README.md#examples))
 4. Implement pod to pod encryption by use of mTLS
 
 ### 20% - Supply Chain Security
