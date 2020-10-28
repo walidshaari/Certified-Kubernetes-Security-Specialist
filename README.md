@@ -21,8 +21,8 @@ These are the exam objectives you review and understand in order to pass the tes
 
 ## CKS repo topics overview
 
-  - [ ] [Cluster Setup - 10%](#cluster-setup---10)
-  - [ ] [Cluster Hardening - 15%](#cluster-hardening---15)
+  - [X] [Cluster Setup - 10%](#cluster-setup---10)
+  - [X] [Cluster Hardening - 15%](#cluster-hardening---15)
   - [ ] [System Hardening - 15%](#system-hardening---15)
   - [ ] [Minimize Microservice Vulnerabilities - 20%](#minimize-microservice-vulnerabilities---20)
   - [ ] [Supply Chain Security - 20%](#supply-chain-security---20)
@@ -49,10 +49,18 @@ These are the exam objectives you review and understand in order to pass the tes
 
 1. [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 2. :triangular_flag_on_post: [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)  (etcd, kubelet, kubedns, kubeapi)
-3. Properly set up Ingress objects with security control
-4. Protect node metadata and endpoints
+3. Properly set up [Ingress objects with security control](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
+4. [Protect node metadata and endpoints](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access)
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
-6. Verify platform binaries before deploying
+6. [Verify platform binaries before deploying](https://github.com/kubernetes/kubernetes/releases)
+
+<details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
+  
+- checking the Kubernetes release page for the specific release
+  -  checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
+
+</details>
+
 
 ### Cluster Hardening - 15%
 
