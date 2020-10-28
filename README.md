@@ -19,7 +19,7 @@ These are the exam objectives you review and understand in order to pass the tes
 
 * [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum_%20v1.19%20Coming%20Soon%20November%202020.pdf)
 
-### CKS repo topics overview
+## CKS repo topics overview
 
   - [ ] [Cluster Setup - 10%](#cluster-setup---10)
   - [ ] [Cluster Hardening - 15%](#cluster-hardening---15)
@@ -37,6 +37,11 @@ These are the exam objectives you review and understand in order to pass the tes
   - [ ] [Extra Kubernetes security resources](#extra-kubernetes-security-resources)
     - [CVEs](#cves)
   - [ ] [Stargazers over time](#stargazers-over-time)
+
+<hr style="border:3px solid blue"> </hr>
+<p align="center">
+  <img width="360" src="kubernetes-security-specialist-logo-300x285.png">
+</p>
 
 
 ### Cluster Setup - 10%
