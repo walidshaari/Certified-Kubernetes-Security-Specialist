@@ -59,7 +59,34 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Restrict access to Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
 2. [Use Role-Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
     * :triangular_flag_on_post: [handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
-3. Exercise caution in using service accounts e.g. disable defaults, minimize permissions on newly created ones
+3. Exercise caution in using service accounts e.g. [disable defaults](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#use-the-default-service-account-to-access-the-api-server), minimize permissions on newly created ones
+  
+  
+<details><summary> :clipboard: opt out of automounting API credentials for a service account </summary>
+  
+#### service account scope
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: build-robot
+automountServiceAccountToken: false
+```
+#### pod scope
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cks-pod
+spec:
+  serviceAccountName: default
+  automountServiceAccountToken: false
+
+```
+
+</details>
+
+
 4. [Update Kubernetes frequently](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/)
 
 ### System Hardening - 15%
