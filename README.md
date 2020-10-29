@@ -23,20 +23,20 @@ These are the exam objectives you review and understand in order to pass the tes
 
   - [X] [Cluster Setup - 10%](#cluster-setup---10)
   - [X] [Cluster Hardening - 15%](#cluster-hardening---15)
-  - [ ] [System Hardening - 15%](#system-hardening---15)
+  - [X] [System Hardening - 15%](#system-hardening---15)
   - [ ] [Minimize Microservice Vulnerabilities - 20%](#minimize-microservice-vulnerabilities---20)
   - [ ] [Supply Chain Security - 20%](#supply-chain-security---20)
   - [ ] [Monitoring, Logging and Runtime Security - 20%](#monitoring-logging-and-runtime-security---20)
   
   #### Extra helpful material
   
-  - [ ] [Slack](#slack)
-  - [ ] [Books](#books)
-  - [ ] [Youtube Videos](#youtube-videos)
-  - [ ] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
-  - [ ] [Extra Kubernetes security resources](#extra-kubernetes-security-resources)
+  - [x] [Slack](#slack)
+  - [x] [Books](#books)
+  - [x] [Youtube Videos](#youtube-videos)
+  - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
+  - [x] [Extra Kubernetes security resources](#extra-kubernetes-security-resources)
     - [CVEs](#cves)
-  - [ ] [Stargazers over time](#stargazers-over-time)
+  - [x] [Stargazers over time](#stargazers-over-time)
 
 <hr style="border:3px solid blue"> </hr>
 <p align="center">
@@ -100,8 +100,41 @@ spec:
 ### System Hardening - 15%
 
 1. Minimize host OS footprint (reduce attack surface)
+
+<details><summary> :clipboard: :confused: Reduce host attack surce </summary>
+ 
+* [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
+* [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
+* apply host updates
+* Install minimal required OS fingerprint
+* Protect access to data with permissions
+  *  [Restirct allowed hostpaths](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
+
+</details>
+
 2. Minimize IAM roles
+   * :confused: [Access authentication and authorization](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
 3. Minimize external access to the network
+
+<details><summary> :clipboard: :confused: if it means deny external traffic to outside the cluster?!! </summary>
+  
+* not tested, however, the thinking is that all pods can talk to all pods in all name spaces but not to the outside of the cluster!!!
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: deny-external-egress
+spec:
+  podSelector: {}
+  policyTypes:
+  - Egress
+  egress:
+    to:
+    - namespaceSelector: {}
+    ```
+    
+    </details>
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
    - [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
    - [Seccomp](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
