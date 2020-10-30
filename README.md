@@ -16,7 +16,7 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
 * Icons/emoji legend
   - :clipboard:  Expand to see more content
   - :confused:   Verify, not best resource yet
-  - :white_circle:  Good overall exam reference
+  - :large_blue_circle: Good overall refence, can be used in the exam
   - :triangular_flag_on_post: External third-party resource, can not be used during exam
   
 
@@ -33,7 +33,7 @@ These are the exam objectives you review and understand in order to pass the tes
   - [X] [System Hardening - 15%](#system-hardening---15)
   - [X] [Minimize Microservice Vulnerabilities - 20%](#minimize-microservice-vulnerabilities---20)
   - [X] [Supply Chain Security - 20%](#supply-chain-security---20)
-  - [ ] [Monitoring, Logging and Runtime Security - 20%](#monitoring-logging-and-runtime-security---20)
+  - [X] [Monitoring, Logging and Runtime Security - 20%](#monitoring-logging-and-runtime-security---20)
   
   #### Extra helpful material
   
@@ -52,7 +52,7 @@ These are the exam objectives you review and understand in order to pass the tes
 
 
 ### Cluster Setup - 10%
-:white_circle: [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/) 
+:large_blue_circle: [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/) 
 
 1. [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 2. :triangular_flag_on_post: [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)  (etcd, kubelet, kubedns, kubeapi)
@@ -144,8 +144,8 @@ spec:
  
  </details>
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
-   - [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
-   - [Seccomp](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
+  * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
+  * [Seccomp](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
 
 ### Minimize Microservice Vulnerabilities - 20%
 
@@ -178,13 +178,14 @@ spec:
 
 ### Monitoring, Logging and Runtime Security - 20%
 
+
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
   - [Old kubernetes.io URL: install falco on k8s 1.16](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
    - 
 3. Detect all phases of attack regardless where it occurs and how it spreads
 
-<details><summary> Attack Phases </summary>
+<details><summary> :clipboard:  Attack Phases </summary>
   
 - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
 - :triangular_flag_on_post: [MITRE attack framwork using sysdig falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
@@ -194,7 +195,8 @@ spec:
 </details>
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
-   - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
+ - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
+ - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
