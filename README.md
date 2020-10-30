@@ -143,9 +143,10 @@ spec:
   ```
  
  </details>
+ 
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
-  * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
-  * [Seccomp](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
+   * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
+   * [Seccomp](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
 
 ### Minimize Microservice Vulnerabilities - 20%
 
