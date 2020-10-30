@@ -61,12 +61,12 @@ These are the exam objectives you review and understand in order to pass the tes
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
 6. [Verify platform binaries before deploying](https://github.com/kubernetes/kubernetes/releases)
 
-<details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
+   <details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
   
-- checking the Kubernetes release page for the specific release
-  -  checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
+   - checking the Kubernetes release page for the specific release
+     -  checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
 
-</details>
+   </details>
 
 
 ### Cluster Hardening - 15%
@@ -77,29 +77,28 @@ These are the exam objectives you review and understand in order to pass the tes
 3. Exercise caution in using service accounts e.g. [disable defaults](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#use-the-default-service-account-to-access-the-api-server), minimize permissions on newly created ones
   
   
-<details><summary> :clipboard: opt out of automounting API credentials for a service account </summary>
+   <details><summary> :clipboard: opt out of automounting API credentials for a service account </summary>
   
-#### service account scope
-```yaml
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: build-robot
-automountServiceAccountToken: false
-```
-#### pod scope
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: cks-pod
-spec:
-  serviceAccountName: default
-  automountServiceAccountToken: false
-
-```
-
-</details>
+   #### service account scope
+   ```yaml
+   apiVersion: v1
+   kind: ServiceAccount
+   metadata:
+     name: build-robot
+   automountServiceAccountToken: false
+   ```
+   #### pod scope
+   ```yaml
+   apiVersion: v1
+   kind: Pod
+   metadata:
+     name: cks-pod
+   spec:
+     serviceAccountName: default
+     automountServiceAccountToken: false
+   ```
+   
+   </details>
 
 
 4. [Update Kubernetes frequently](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-upgrade/)
@@ -108,41 +107,41 @@ spec:
 
 1. Minimize host OS footprint (reduce attack surface)
 
-<details><summary> :clipboard: :confused: Reduce host attack surface </summary>
+   <details><summary> :clipboard: :confused: Reduce host attack surface </summary>
  
-* [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
-* [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
-* [PSP pod security policy enforces ](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
-* apply host updates
-* Install minimal required OS fingerprint
-* Protect access to data with permissions
-  *  [Restirct allowed hostpaths](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
+   * [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
+   * [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
+   * [PSP pod security policy enforces ](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+   * apply host updates
+   * Install minimal required OS fingerprint
+   * Protect access to data with permissions
+     *  [Restirct allowed hostpaths](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
 
-</details>
+   </details>
 
 2. Minimize IAM roles
    * :confused: [Access authentication and authorization](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
 3. Minimize external access to the network
 
-<details><summary> :clipboard: :confused: if it means deny external traffic to outside the cluster?!! </summary>
+   <details><summary> :clipboard: :confused: if it means deny external traffic to outside the cluster?!! </summary>
   
-* not tested, however, the thinking is that all pods can talk to all pods in all name spaces but not to the outside of the cluster!!!
+   * not tested, however, the thinking is that all pods can talk to all pods in all name spaces but not to the outside of the cluster!!!
 
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  name: deny-external-egress
-spec:
-  podSelector: {}
-  policyTypes:
-  - Egress
-  egress:
-    to:
-    - namespaceSelector: {}
-  ```
+   ```yaml
+   apiVersion: networking.k8s.io/v1
+   kind: NetworkPolicy
+   metadata:
+     name: deny-external-egress
+   spec:
+     podSelector: {}
+     policyTypes:
+     - Egress
+     egress:
+       to:
+       - namespaceSelector: {}
+     ```
  
- </details>
+    </details>
  
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
    * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
@@ -163,37 +162,38 @@ spec:
 
 1. Minimize base image footprint
 
-<details><summary> :clipboard: minimize base Image </summary>
+   <details><summary> :clipboard: minimize base Image </summary>
   
-* Use distroless, UBI minimal, Alpine, or relavent to your app nodejs, python but the minimal build.
-* Do not include uncessary software not required for container during runtime
-  - e.g build tools and utilities, troubleshooting and debug binaries.
-    * :triangular_flag_on_post: [Learnk8s smaller docker images blog](https://learnk8s.io/blog/smaller-docker-images)
-    * :triangular_flag_on_post: [GKE 7 best practices for building containers](https://cloud.google.com/blog/products/gcp/7-best-practices-for-building-containers)
+   * Use distroless, UBI minimal, Alpine, or relavent to your app nodejs, python but the minimal build.
+   * Do not include uncessary software not required for container during runtime
+     - e.g build tools and utilities, troubleshooting and debug binaries.
+       * :triangular_flag_on_post: [Learnk8s smaller docker images blog](https://learnk8s.io/blog/smaller-docker-images)
+       * :triangular_flag_on_post: [GKE 7 best practices for building containers](https://cloud.google.com/blog/products/gcp/7-best-practices-for-building-containers)
 
-</details>
+   </details>
 
 2. Secure your supply chain: [whitelist allowed image registries](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/#why-do-i-need-admission-controllers), sign and validate images
 3. Use static analysis of user workloads (e.g. [kubernetes resources](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#7-statically-analyse-yaml), docker files)
 4. [Scan images for known vulnerabilities](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#10-scan-images-and-run-ids)
-
+   * :triangular_flag_on_post: [Aqua security Trivy](https://github.com/aquasecurity/trivy#quick-start)
+   * :triangular_flag_on_post: [Anchore command line scans](https://github.com/anchore/anchore-cli#command-line-examples)
 ### Monitoring, Logging and Runtime Security - 20%
 
 
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
-  - [Old kubernetes.io URL: install falco on k8s 1.16](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
+  - [Old kubernetes.io URL: install falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
    - 
 3. Detect all phases of attack regardless where it occurs and how it spreads
 
-<details><summary> :clipboard:  Attack Phases </summary>
+   <details><summary> :clipboard:  Attack Phases </summary>
   
-- :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
-- :triangular_flag_on_post: [MITRE attack framwork using sysdig falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
-- :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
-- :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
+   - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
+   - :triangular_flag_on_post: [MITRE attack framwork using sysdig falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
+   - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
+   - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
 
-</details>
+   </details>
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
  - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
