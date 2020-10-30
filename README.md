@@ -18,6 +18,7 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
   - :confused:   Verify, not best resource yet
   - :large_blue_circle: Good overall refence, can be used in the exam
   - :triangular_flag_on_post: External third-party resource, can not be used during exam
+  - :pencil:  ToDo, item that needs further checking(todo list for future research/commits)
   
 
 ## Exam Objectives
