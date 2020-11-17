@@ -1,17 +1,14 @@
 [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 # Certified Kubernetes Security Specialist - CKS  
-**Coming soon November 2020**
 
 Online curated resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist **CKS** Certification exam.
-
-**Disclaimer**: This is not likely a comprehensive list as the exam is not general availability **GA** yet , most likely will be a moving target with the fast pace of k8s development
 
 - Please raise an issue, or make a pull request for fixes, new additions, or updates.
 
 I will try to restrict the cross references of resources primarly to [kubernetes.io](kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io/{docs|blog}** and [kuernetes github repo](https://github.com/kubernetes) only. Youtube videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 15th July announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. falco install](https://github.com/kubernetes/website/issues/24184).
+Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. falco install](https://github.com/kubernetes/website/issues/24184).
 
 * Icons/emoji legend
   - :clipboard:  Expand to see more content
