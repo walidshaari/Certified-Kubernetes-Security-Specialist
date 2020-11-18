@@ -224,6 +224,7 @@ These are the exam objectives you review and understand in order to pass the tes
 ### Containers and Kubernetes Security Training
 
 1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
+1. [Udemy Kubernetes CKS 2020 Complete Course and Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
 1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
@@ -232,7 +233,6 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Andrew Martin Attacking and Defending Cloud Native Infrastructure](https://youtu.be/TXems9GPWMs)
 1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 
-
 ### Extra Kubernetes security resources
 1. [Kubernetes-security.info](https://kubernetes-security.info/) 
 1. [Aquasecurity Blogs](https://blog.aquasec.com/)
@@ -240,18 +240,16 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Securekubernetes](https://securekubernetes.com/)
 1. [Simulator: A distributed systems and infrastructure simulator for attacking and debugging Kubernetes](https://github.com/kubernetes-simulator/simulator)
 
-
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
 
 #### Other CKS related repos
-1. [Kubernetes Capture the Flag vagrant environment](https://github.com/NodyHub/k8s-ctf-rocks) - was hosted online on http://k8s-ctf.rocks/
+
 1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide)
 1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS curated resources
 1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS curated resources
 1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS curated resources
 1. [Madhu Akula's Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)  - vulnerable cluster environment to learn and practice Kubernetes security.
+1. [Kubernetes Capture the Flag vagrant environment](https://github.com/NodyHub/k8s-ctf-rocks) - was hosted online on http://k8s-ctf.rocks/
 
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/walidshaari/Certified-Kubernetes-Security-Specialist.svg)](https://starchart.cc/walidshaari/Certified-Kubernetes-Security-Specialist)
+=============================================================================================================================================================================
