@@ -38,6 +38,8 @@ These are the exam objectives you review and understand in order to pass the tes
   - [x] [Slack](#slack)
   - [x] [Books](#books)
   - [x] [Youtube Videos](#youtube-videos)
+  - [x] [Webinars](#webinars)
+    - [AquaSec](https://www.aquasec.com/resources/virtual-container-security-channel/)
   - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
   - [x] [Extra Kubernetes security resources](#extra-kubernetes-security-resources)
     - [CVEs](#cves)
@@ -73,7 +75,6 @@ These are the exam objectives you review and understand in order to pass the tes
 2. [Use Role-Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
     * :triangular_flag_on_post: [handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
 3. Exercise caution in using service accounts e.g. [disable defaults](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#use-the-default-service-account-to-access-the-api-server), minimize permissions on newly created ones
-  
   
    <details><summary> :clipboard: opt out of automounting API credentials for a service account </summary>
   
@@ -242,6 +243,7 @@ These are the exam objectives you review and understand in order to pass the tes
 
 #### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
+1. [Kubernetes Vulnerability Puts Clusters at Risk of Takeover (CVE-2020-8558)](https://unit42.paloaltonetworks.com/cve-2020-8558/)
 
 #### Other CKS related repos
 
@@ -251,5 +253,3 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS curated resources
 1. [Madhu Akula's Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)  - vulnerable cluster environment to learn and practice Kubernetes security.
 1. [Kubernetes Capture the Flag vagrant environment](https://github.com/NodyHub/k8s-ctf-rocks) - was hosted online on http://k8s-ctf.rocks/
-
-=============================================================================================================================================================================
