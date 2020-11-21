@@ -25,11 +25,13 @@ Offical exam objectives you review and understand in order to pass the test.
 * [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum_%20v1.19.pdf)
 
 - Duration : two (2) hours
-- Number of questions: 15-20 question
+- Number of questions: 15-20 hands-on performance based tasks
 - Passing score: 67%
-- Validity: two (2) years
+- Certification validity: two (2) years
 - Prerequisite: valid CKA
+- Cost: $300 USD, One (1) year exam eligibility, with a free retake within the year.
 
+  *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
 ## CKS repo topics overview
 
   - [X] [Cluster Setup - 10%](#cluster-setup---10)
@@ -232,7 +234,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
 1. [Udemy Kubernetes CKS 2020 Complete Course and Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
-1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/)
+1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) -  available January 8, 2021.
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
 1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
