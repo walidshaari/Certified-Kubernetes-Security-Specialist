@@ -39,11 +39,9 @@ These are the exam objectives you review and understand in order to pass the tes
   - [x] [Books](#books)
   - [x] [Youtube Videos](#youtube-videos)
   - [x] [Webinars](#webinars)
-    - [AquaSec](https://www.aquasec.com/resources/virtual-container-security-channel/)
   - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
   - [x] [Extra Kubernetes security resources](#extra-kubernetes-security-resources)
     - [CVEs](#cves)
-  - [x] [Stargazers over time](#stargazers-over-time)
 
 <hr style="border:3px solid blue"> </hr>
 <p align="center">
@@ -220,12 +218,15 @@ These are the exam objectives you review and understand in order to pass the tes
 1. [Code in Action for the **book Learn Kubernetes Security** playlist](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB)
 1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
 1. [How to Train your Red Team (for Cloud-Native) - Andrew Martin, ControPlane](https://youtu.be/LJrSAPUNHvE)
-1. [InGuardians/Jay Beale: Kubernetes Practical attacks and defences](https://youtu.be/LtCx3zZpOfs)
+1. [InGuardians/Jay Beale: Kubernetes Practical attacks and defences](https://youtu.be/LtCx3zZpOfs)\
+  - [Webinars](#webinars)
+    - [AquaSec webiners collection](https://www.aquasec.com/resources/virtual-container-security-channel/) - Webinars and videos presented by leading industry experts covering Microservices, Container & Serverless security, Kubernetes, DevSecOps, and everything related to the most disruptive area in IT.
 
 ### Containers and Kubernetes Security Training
 
 1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
 1. [Udemy Kubernetes CKS 2020 Complete Course and Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
+1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/)
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
 1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
@@ -248,8 +249,8 @@ These are the exam objectives you review and understand in order to pass the tes
 #### Other CKS related repos
 
 1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide)
-1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS curated resources
-1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS curated resources
-1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS curated resources
+1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS resources
+1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS resources
+1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS resources
 1. [Madhu Akula's Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)  - vulnerable cluster environment to learn and practice Kubernetes security.
 1. [Kubernetes Capture the Flag vagrant environment](https://github.com/NodyHub/k8s-ctf-rocks) - was hosted online on http://k8s-ctf.rocks/
