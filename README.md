@@ -18,11 +18,17 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
   - :pencil:  ToDo, item that needs further checking(todo list for future research/commits)
   
 
-## Exam Objectives
+## Exam Brief 
 
-These are the exam objectives you review and understand in order to pass the test.
+Offical exam objectives you review and understand in order to pass the test.
 
 * [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum_%20v1.19.pdf)
+
+- Duration : two (2) hours
+- Number of questions: 15-20 question
+- Passing score: 67%
+- Validity: two (2) years
+- Prerequisite: valid CKA
 
 ## CKS repo topics overview
 
