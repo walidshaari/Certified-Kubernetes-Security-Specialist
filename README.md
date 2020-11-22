@@ -186,7 +186,11 @@ Offical exam objectives you review and understand in order to pass the test.
 
 
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
-  - [Old kubernetes.io URL: install falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
+  - [Old kubernetes.io URL: install Falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
+	- [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
+	- [Falco Kubernetes manifests](https://github.com/falcosecurity/evolution/tree/master/deploy/kubernetes/kernel-and-k8s-audit)
+	- [Falco installation guide](https://falco.org/docs/installation/)
+	- [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
    - 
 3. Detect all phases of attack regardless where it occurs and how it spreads
@@ -194,7 +198,7 @@ Offical exam objectives you review and understand in order to pass the test.
    <details><summary> :clipboard:  Attack Phases </summary>
   
    - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
-   - :triangular_flag_on_post: [MITRE attack framwork using sysdig falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
+   - :triangular_flag_on_post: [MITRE attack framwork using Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
    - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
    - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
 
