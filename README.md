@@ -8,7 +8,7 @@ Online curated resources that will help you prepare for taking the Kubernetes Ce
 
 I will try to restrict the cross references of resources primarly to [kubernetes.io](https://kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io/{docs|blog}** and [kubernetes github repo](https://github.com/kubernetes) only. Youtube videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. falco install](https://github.com/kubernetes/website/issues/24184).
+Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
 
 * Icons/emoji legend
   - :clipboard:  Expand to see more content
@@ -184,29 +184,27 @@ Offical exam objectives you review and understand in order to pass the test.
    * :triangular_flag_on_post: [Anchore command line scans](https://github.com/anchore/anchore-cli#command-line-examples)
 ### Monitoring, Logging and Runtime Security - 20%
 
-
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
   - [Old kubernetes.io URL: install Falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
-	- [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
-	- [Falco Kubernetes manifests](https://github.com/falcosecurity/evolution/tree/master/deploy/kubernetes/kernel-and-k8s-audit)
-	- [Falco installation guide](https://falco.org/docs/installation/)
-	- [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
+	- :triangular_flag_on_post: [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
+	- :triangular_flag_on_post: [Falco Kubernetes manifests](https://github.com/falcosecurity/evolution/tree/master/deploy/kubernetes/kernel-and-k8s-audit)
+	- :triangular_flag_on_post: [Falco installation guide](https://falco.org/docs/installation/)
+	- :triangular_flag_on_post: [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
-   - 
 3. Detect all phases of attack regardless where it occurs and how it spreads
 
    <details><summary> :clipboard:  Attack Phases </summary>
   
-   - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
-   - :triangular_flag_on_post: [MITRE attack framwork using Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
-   - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
-   - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
+     - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
+     - :triangular_flag_on_post: [MITRE attack framwork using Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
+     - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
+     - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
 
    </details>
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
- - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
- - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
+   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
+   - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
