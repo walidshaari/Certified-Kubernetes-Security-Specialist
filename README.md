@@ -235,7 +235,7 @@ Offical exam objectives you review and understand in order to pass the test.
 ### Containers and Kubernetes Security Training
 
 1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
-1. [Udemy Kubernetes CKS 2020 Complete Course and Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
+1. [Udemy Kubernetes CKS 2020 Complete Course and killer.sh Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)  - Special discount code **CKS-KILLER-SHELL** valid till 3rd Dec 2020
 1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) -  available January 8, 2021.
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
