@@ -38,11 +38,8 @@ These are the exam objectives you review and understand in order to pass the tes
   - [x] [Slack](#slack)
   - [x] [Books](#books)
   - [x] [Youtube Videos](#youtube-videos)
-  - [x] [Webinars](#webinars)
-    - [AquaSec](https://www.aquasec.com/resources/virtual-container-security-channel/)
   - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
   - [x] [Extra Kubernetes security resources](generic-kubernetes-containers-security/Kubernetes.md)
-  - [x] [Stargazers over time](#stargazers-over-time)
 
 <hr style="border:3px solid blue"> </hr>
 <p align="center">
