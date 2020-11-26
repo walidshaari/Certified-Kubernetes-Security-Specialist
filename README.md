@@ -8,7 +8,7 @@ Online curated resources that will help you prepare for taking the Kubernetes Ce
 
 I will try to restrict the cross references of resources primarly to [kubernetes.io](https://kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io/{docs|blog}** and [kubernetes github repo](https://github.com/kubernetes) only. Youtube videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. falco install](https://github.com/kubernetes/website/issues/24184).
+Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
 
 * Icons/emoji legend
   - :clipboard:  Expand to see more content
@@ -18,12 +18,20 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
   - :pencil:  ToDo, item that needs further checking(todo list for future research/commits)
   
 
-## Exam Objectives
+## Exam Brief 
 
-These are the exam objectives you review and understand in order to pass the test.
+Offical exam objectives you review and understand in order to pass the test.
 
 * [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum_%20v1.19.pdf)
 
+- Duration : two (2) hours
+- Number of questions: 15-20 hands-on performance based tasks
+- Passing score: 67%
+- Certification validity: two (2) years
+- Prerequisite: valid CKA
+- Cost: $300 USD, One (1) year exam eligibility, with a free retake within the year.
+
+  *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
 ## CKS repo topics overview
 
   - [X] [Cluster Setup - 10%](#cluster-setup---10)
@@ -38,6 +46,7 @@ These are the exam objectives you review and understand in order to pass the tes
   - [x] [Slack](#slack)
   - [x] [Books](#books)
   - [x] [Youtube Videos](#youtube-videos)
+  - [x] [Webinars](#webinars)
   - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
   - [x] [Extra Kubernetes security resources](generic-kubernetes-containers-security/Kubernetes.md)
 
@@ -174,25 +183,27 @@ These are the exam objectives you review and understand in order to pass the tes
    * :triangular_flag_on_post: [Anchore command line scans](https://github.com/anchore/anchore-cli#command-line-examples)
 ### Monitoring, Logging and Runtime Security - 20%
 
-
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
-  - [Old kubernetes.io URL: install falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
+  - [Old kubernetes.io URL: install Falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
+	- :triangular_flag_on_post: [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
+	- :triangular_flag_on_post: [Falco Kubernetes manifests](https://github.com/falcosecurity/evolution/tree/master/deploy/kubernetes/kernel-and-k8s-audit)
+	- :triangular_flag_on_post: [Falco installation guide](https://falco.org/docs/installation/)
+	- :triangular_flag_on_post: [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
-   - 
 3. Detect all phases of attack regardless where it occurs and how it spreads
 
    <details><summary> :clipboard:  Attack Phases </summary>
   
-   - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
-   - :triangular_flag_on_post: [MITRE attack framwork using sysdig falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
-   - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
-   - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
+     - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
+     - :triangular_flag_on_post: [MITRE attack framwork using Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
+     - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
+     - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
 
    </details>
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
- - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
- - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
+   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
+   - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
@@ -219,7 +230,8 @@ These are the exam objectives you review and understand in order to pass the tes
 ### Containers and Kubernetes Security Training
 
 1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
-1. [Udemy Kubernetes CKS 2020 Complete Course and Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)
+1. [Udemy Kubernetes CKS 2020 Complete Course and killer.sh Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)  - Special discount code **CKS-KILLER-SHELL** valid till 3rd Dec 2020
+1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) -  available January 8, 2021.
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
 1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
