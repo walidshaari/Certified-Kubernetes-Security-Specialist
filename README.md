@@ -241,7 +241,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 #### Other CKS related repos
 
-1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide)
-1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS curated resources
-1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS curated resources
-1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS curated resources
+1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and inforative study guide from[Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
+1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS repository
+1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS  repository
+1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS  repository
