@@ -48,8 +48,7 @@ Offical exam objectives you review and understand in order to pass the test.
   - [x] [Youtube Videos](#youtube-videos)
   - [x] [Webinars](#webinars)
   - [x] [Containers and Kubernetes Security Training](#containers-and-kubernetes-security-training)
-  - [x] [Extra Kubernetes security resources](#extra-kubernetes-security-resources)
-    - [CVEs](#cves)
+  - [x] [Extra Kubernetes security resources](generic-kubernetes-containers-security/Kubernetes.md)
 
 <hr style="border:3px solid blue"> </hr>
 <p align="center">
@@ -215,7 +214,7 @@ Offical exam objectives you review and understand in order to pass the test.
 ### Slack
 
 1. [Kubernetes Community - #cks-exam-prep](https://kubernetes.slack.com)
-1. [Kubernauts Community #cks](https://kubernauts-slack-join.herokuapp.com/)
+1. [Kubernauts Community - #cks](https://kubernauts-slack-join.herokuapp.com/)
 
 ### Books
 
@@ -227,10 +226,6 @@ Offical exam objectives you review and understand in order to pass the test.
 1. [Google/Ian Lewis: Kubernetes security best practices](https://youtu.be/wqsUfvRyYpw)
 1. [Code in Action for the **book Learn Kubernetes Security** playlist](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB)
 1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
-1. [How to Train your Red Team (for Cloud-Native) - Andrew Martin, ControPlane](https://youtu.be/LJrSAPUNHvE)
-1. [InGuardians/Jay Beale: Kubernetes Practical attacks and defences](https://youtu.be/LtCx3zZpOfs)\
-  - [Webinars](#webinars)
-    - [AquaSec webiners collection](https://www.aquasec.com/resources/virtual-container-security-channel/) - Webinars and videos presented by leading industry experts covering Microservices, Container & Serverless security, Kubernetes, DevSecOps, and everything related to the most disruptive area in IT.
 
 ### Containers and Kubernetes Security Training
 
@@ -242,25 +237,11 @@ Offical exam objectives you review and understand in order to pass the test.
 1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
     - [hands-on tutorial](https://tutorial.kubernetes-security.info/)
 1. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
-1. [Andrew Martin Attacking and Defending Cloud Native Infrastructure](https://youtu.be/TXems9GPWMs)
 1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
-
-### Extra Kubernetes security resources
-1. [Kubernetes-security.info](https://kubernetes-security.info/) 
-1. [Aquasecurity Blogs](https://blog.aquasec.com/)
-1. [Control-plane/Andrew Martin @sublimino: 11 ways not to get hacked](https://control-plane.io/posts/11-ways-not-to-get-hacked/)
-1. [Securekubernetes](https://securekubernetes.com/)
-1. [Simulator: A distributed systems and infrastructure simulator for attacking and debugging Kubernetes](https://github.com/kubernetes-simulator/simulator)
-
-#### CVEs
-1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
-1. [Kubernetes Vulnerability Puts Clusters at Risk of Takeover (CVE-2020-8558)](https://unit42.paloaltonetworks.com/cve-2020-8558/)
 
 #### Other CKS related repos
 
-1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide)
-1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS resources
-1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS resources
-1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS resources
-1. [Madhu Akula's Kubernetes Goat](https://github.com/madhuakula/kubernetes-goat)  - vulnerable cluster environment to learn and practice Kubernetes security.
-1. [Kubernetes Capture the Flag vagrant environment](https://github.com/NodyHub/k8s-ctf-rocks) - was hosted online on http://k8s-ctf.rocks/
+1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and inforative study guide from[Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
+1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS repository
+1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS  repository
+1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS  repository
