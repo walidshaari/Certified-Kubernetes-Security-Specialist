@@ -15,6 +15,9 @@ This is an extra resources related to security topic for Kubernetes to keep your
 1. [How to Train your Red Team (for Cloud-Native) - Andrew Martin, ControPlane](https://youtu.be/LJrSAPUNHvE)
 1. [InGuardians/Jay Beale: Kubernetes Practical attacks and defences](https://youtu.be/LtCx3zZpOfs)
 
+### White Papers
+1. [CNCF cloud-native security white paper Nov 2020](https://github.com/cncf/sig-security/blob/master/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
+
 ### CVEs
 1. [CNCF Kubernetes Security Anatomy and the Recently Disclosed CVEs (CVE-2020-8555, CVE-2020-8552)](https://youtu.be/Dp1RCYCpyJk)
 1. [Kubernetes Vulnerability Puts Clusters at Risk of Takeover (CVE-2020-8558)](https://unit42.paloaltonetworks.com/cve-2020-8558/)
