@@ -32,6 +32,22 @@ Offical exam objectives you review and understand in order to pass the test.
 - Cost: $300 USD, One (1) year exam eligibility, with a free retake within the year.
 
   *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
+
+- URLs allowed in the extra single tab:
+  - From Chrome or Chromium browser to open one additional tab in order to access 
+    Kubernetes Documentation: 
+    - https://kubernetes.io/docs/ and their subdomains
+    - https://github.com/kubernetes/ and their subdomains
+    - https://kubernetes.io/blog/ and their subdomains
+
+  This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs/)
+  - Tools:
+    - Trivy documentation https://github.com/aquasecurity/trivy
+    - Sysdig documentation https://docs.sysdig.com/
+    - Falco documentation https://falco.org/docs/
+    - App Armor:
+      Documentation https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
+
 ## CKS repo topics overview
 
   - [X] [Cluster Setup - 10%](#cluster-setup---10)
