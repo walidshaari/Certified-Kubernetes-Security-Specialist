@@ -195,15 +195,14 @@ Offical exam objectives you review and understand in order to pass the test.
 2. Secure your supply chain: [whitelist allowed image registries](https://kubernetes.io/blog/2019/03/21/a-guide-to-kubernetes-admission-controllers/#why-do-i-need-admission-controllers), sign and validate images
 3. Use static analysis of user workloads (e.g. [kubernetes resources](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#7-statically-analyse-yaml), docker files)
 4. [Scan images for known vulnerabilities](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/#10-scan-images-and-run-ids)
-   * :triangular_flag_on_post: [Aqua security Trivy](https://github.com/aquasecurity/trivy#quick-start)
-   * :triangular_flag_on_post: [Anchore command line scans](https://github.com/anchore/anchore-cli#command-line-examples)
+    * [Aqua security Trivy]( https://github.com/aquasecurity/trivy)
+    * :triangular_flag_on_post: [Anchore command line scans](https://github.com/anchore/anchore-cli#command-line-examples)
 ### Monitoring, Logging and Runtime Security - 20%
 
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
-  - [Old kubernetes.io URL: install Falco on k8s 1.17](https://v1-17.docs.kubernetes.io/docs/tasks/debug-application-cluster/falco/)
+	- [Falco installation guide](https://falco.org/docs/)
 	- :triangular_flag_on_post: [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
 	- :triangular_flag_on_post: [Falco Kubernetes manifests](https://github.com/falcosecurity/evolution/tree/master/deploy/kubernetes/kernel-and-k8s-audit)
-	- :triangular_flag_on_post: [Falco installation guide](https://falco.org/docs/installation/)
 	- :triangular_flag_on_post: [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
 3. Detect all phases of attack regardless where it occurs and how it spreads
@@ -218,6 +217,7 @@ Offical exam objectives you review and understand in order to pass the test.
    </details>
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
+   - [Sysdig documentation](https://docs.sysdig.com/)
    - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
    - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
@@ -257,7 +257,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 #### Other CKS related repos
 
-1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and inforative study guide from[Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
+1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and informative study guide from [Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
 1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS repository
 1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS  repository
 1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS  repository
