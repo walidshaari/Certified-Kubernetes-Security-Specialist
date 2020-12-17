@@ -77,29 +77,31 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. [Use Network security policies to restrict cluster level access](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 2. :triangular_flag_on_post: [Use CIS benchmark to review the security configuration of Kubernetes components](https://www.cisecurity.org/benchmark/kubernetes/)  (etcd, kubelet, kubedns, kubeapi)
+    - :triangular_flag_on_post: [Kube-bench](https://github.com/aquasecurity/kube-bench) - Checks whether Kubernetes is deployed securely by running the checks documented ain the CIS Kubernetes Benchmark.
 3. Properly set up [Ingress objects with security control](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
 4. [Protect node metadata and endpoints](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access)
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
 6. [Verify platform binaries before deploying](https://github.com/kubernetes/kubernetes/releases)
 
-   <details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
+     <details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
   
-   - checking the Kubernetes release page for the specific release
-     -  checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
+     - checking the Kubernetes release page for the specific release
+     - checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
 
-   </details>
+     </details>
 
 
 ### Cluster Hardening - 15%
 
 1. [Restrict access to Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
 2. [Use Role-Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
-    * :triangular_flag_on_post: [handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
+    * :triangular_flag_on_post: [Handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
+    * :triangular_flag_on_post: [Simplify Kubernetes Resource Access Control using RBAC Impersonation](https://docs.bitnami.com/tutorials/simplify-kubernetes-resource-access-rbac-impersonation/)
 3. Exercise caution in using service accounts e.g. [disable defaults](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/#use-the-default-service-account-to-access-the-api-server), minimize permissions on newly created ones
   
-   <details><summary> :clipboard: opt out of automounting API credentials for a service account </summary>
+   <details><summary> :clipboard: Opt out of automounting API credentials for a service account </summary>
   
-   #### service account scope
+   #### Opt out at service account scope
    ```yaml
    apiVersion: v1
    kind: ServiceAccount
@@ -107,7 +109,7 @@ Offical exam objectives you review and understand in order to pass the test.
      name: build-robot
    automountServiceAccountToken: false
    ```
-   #### pod scope
+   #### Opt out at pod scope
    ```yaml
    apiVersion: v1
    kind: Pod
