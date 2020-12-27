@@ -6,7 +6,7 @@ Online curated resources that will help you prepare for taking the Kubernetes Ce
 
 - Please raise an issue, or make a pull request for fixes, new additions, or updates.
 
-I will try to restrict the cross references of resources primarly to [kubernetes.io](https://kubernetes.io) as CNCF/Linux Foundation exam rules allows you search **kubernetes.io/{docs|blog}** and [kubernetes github repo](https://github.com/kubernetes) only. Youtube videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
+Resources are primarly cross referenced back to the [allowed CKS sites](#urls-allowed-in-the-extra-single-tab) during the exam as per CNCF/Linux Foundation exam allowed search rules. Videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
 Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
 
@@ -33,7 +33,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
   *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
 
-- URLs allowed in the extra single tab:
+### URLs allowed in the extra single tab
   - From Chrome or Chromium browser to open one additional tab in order to access 
     Kubernetes Documentation: 
     - https://kubernetes.io/docs/ and their subdomains
@@ -42,11 +42,10 @@ Offical exam objectives you review and understand in order to pass the test.
 
   This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs/)
   - Tools:
-    - Trivy documentation https://github.com/aquasecurity/trivy
-    - Sysdig documentation https://docs.sysdig.com/
-    - Falco documentation https://falco.org/docs/
-    - App Armor:
-      Documentation https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
+    - Trivy documentation: https://github.com/aquasecurity/trivy
+    - Sysdig documentation: https://docs.sysdig.com/
+    - Falco documentation: https://falco.org/docs/
+    - App Armor documentation: https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
 
 ## CKS repo topics overview
 
@@ -71,7 +70,6 @@ Offical exam objectives you review and understand in order to pass the test.
   <img width="360" src="kubernetes-security-specialist-logo-300x285.png">
 </p>
 
-
 ### Cluster Setup - 10%
 :large_blue_circle: [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/) 
 
@@ -80,6 +78,30 @@ Offical exam objectives you review and understand in order to pass the test.
     - :triangular_flag_on_post: [Kube-bench](https://github.com/aquasecurity/kube-bench) - Checks whether Kubernetes is deployed securely by running the checks documented ain the CIS Kubernetes Benchmark.
 3. Properly set up [Ingress objects with security control](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)
 4. [Protect node metadata and endpoints](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/#restricting-cloud-metadata-api-access)
+
+    <details><summary> Using Kubernetes network policy to restrict pods access to cloud metadata </summary>
+
+      * This example assumes AWS cloud, and metadata IP address at 169.254. 169.254 should be blocked while all other external addresses are not
+
+     ```yaml
+     apiVersion: networking.k8s.io/v1
+     kind: NetworkPolicy
+     metadata:
+       name: deny-only-cloud-metadata-access
+     spec:
+       podSelector: {}
+       policyTypes:
+       - Egress
+       egress:
+       - to:
+         - ipBlock:
+           cidr: 0.0.0.0/0
+           except:
+           - 169.254.169.254/32
+     ```
+
+    </details>
+ 
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
 6. [Verify platform binaries before deploying](https://github.com/kubernetes/kubernetes/releases)
 
@@ -94,6 +116,8 @@ Offical exam objectives you review and understand in order to pass the test.
 ### Cluster Hardening - 15%
 
 1. [Restrict access to Kubernetes API](https://kubernetes.io/docs/reference/access-authn-authz/controlling-access/)
+  - [Control anonymous requests to Kube-apiserver](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#anonymous-requests)
+  - [Non secure access to the kube-apiserver](https://kubernetes.io/docs/concepts/security/controlling-access/#api-server-ports-and-ips)
 2. [Use Role-Based Access Controls to minimize exposure](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
     * :triangular_flag_on_post: [Handy site collects together articles, tools and the official documentation all in one place](https://rbac.dev/)
     * :triangular_flag_on_post: [Simplify Kubernetes Resource Access Control using RBAC Impersonation](https://docs.bitnami.com/tutorials/simplify-kubernetes-resource-access-rbac-impersonation/)
@@ -162,6 +186,8 @@ Offical exam objectives you review and understand in order to pass the test.
        to:
        - namespaceSelector: {}
      ```
+     
+     
  
     </details>
  
@@ -220,7 +246,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
    - [Sysdig documentation](https://docs.sysdig.com/)
-   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
+f   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
    - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
@@ -260,6 +286,7 @@ Offical exam objectives you review and understand in order to pass the test.
 #### Other CKS related repos
 
 1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and informative study guide from [Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
+1. [Kim's CKS Challenge series](https://github.com/killer-sh/cks-challenge-series) - also posted on medium @ https://wuestkamp.medium.com/
 1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS repository
 1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS  repository
 1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS  repository
