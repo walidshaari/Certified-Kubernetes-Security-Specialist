@@ -2,6 +2,10 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 # Certified Kubernetes Security Specialist - CKS  
 
+<p align="center">
+  <img width="360" src="kubernetes-security-specialist-logo-300x285.png">
+</p>
+
 Online curated resources that will help you prepare for taking the Kubernetes Certified Kubernetes Security Specialist **CKS** Certification exam.
 
 - Please raise an issue, or make a pull request for fixes, new additions, or updates.
@@ -15,8 +19,7 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
   - :confused:   Verify, not best resource yet
   - :large_blue_circle: Good overall refence, can be used in the exam
   - :triangular_flag_on_post: External third-party resource, can not be used during exam
-  - :pencil:  ToDo, item that needs further checking(todo list for future research/commits)
-  
+  - :pencil:  To-do, item that needs further checking(todo list for future research/commits)
 
 ## Exam Brief 
 
@@ -36,16 +39,16 @@ Offical exam objectives you review and understand in order to pass the test.
 ### URLs allowed in the extra single tab
   - From Chrome or Chromium browser to open one additional tab in order to access 
     Kubernetes Documentation: 
-    - https://kubernetes.io/docs/ and their subdomains
-    - https://github.com/kubernetes/ and their subdomains
-    - https://kubernetes.io/blog/ and their subdomains
+    - https://kubernetes.io/docs and their subdomains
+    - https://github.com/kubernetes and their subdomains
+    - https://kubernetes.io/blog and their subdomains
 
-  This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs/)
+  This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs)
   - Tools:
-    - Trivy documentation: https://github.com/aquasecurity/trivy
-    - Sysdig documentation: https://docs.sysdig.com/
-    - Falco documentation: https://falco.org/docs/
-    - App Armor documentation: https://gitlab.com/apparmor/apparmor/-/wikis/Documentation
+    - [Trivy documentation](https://github.com/aquasecurity/trivy)
+    - [Sysdig documentation](https://docs.sysdig.com)
+    - [Falco documentation](https://falco.org/docs)
+    - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
 
 ## CKS repo topics overview
 
@@ -66,9 +69,6 @@ Offical exam objectives you review and understand in order to pass the test.
   - [x] [Extra Kubernetes security resources](generic-kubernetes-containers-security/Kubernetes.md)
 
 <hr style="border:3px solid blue"> </hr>
-<p align="center">
-  <img width="360" src="kubernetes-security-specialist-logo-300x285.png">
-</p>
 
 ### Cluster Setup - 10%
 :large_blue_circle: [Securing a Cluster](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/) 
@@ -81,25 +81,24 @@ Offical exam objectives you review and understand in order to pass the test.
 
     <details><summary> Using Kubernetes network policy to restrict pods access to cloud metadata </summary>
 
-      * This example assumes AWS cloud, and metadata IP address at 169.254. 169.254 should be blocked while all other external addresses are not
+      * This example assumes AWS cloud, and metadata IP address is 169.254.169.254 should be blocked while all other external addresses are not.
 
-     ```yaml
-     apiVersion: networking.k8s.io/v1
-     kind: NetworkPolicy
-     metadata:
-       name: deny-only-cloud-metadata-access
-     spec:
-       podSelector: {}
-       policyTypes:
-       - Egress
-       egress:
-       - to:
-         - ipBlock:
-           cidr: 0.0.0.0/0
-           except:
-           - 169.254.169.254/32
-     ```
-
+      ```yaml
+      apiVersion: networking.k8s.io/v1
+      kind: NetworkPolicy
+      metadata:
+        name: deny-only-cloud-metadata-access
+      spec:
+        podSelector: {}
+        policyTypes:
+        - Egress
+        egress:
+        - to:
+          - ipBlock:
+            cidr: 0.0.0.0/0
+            except:
+            - 169.254.169.254/32
+      ```
     </details>
  
 5. [Minimize use of, and access to, GUI elements](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/#accessing-the-dashboard-ui)
@@ -107,8 +106,8 @@ Offical exam objectives you review and understand in order to pass the test.
 
      <details><summary> :clipboard:  Kubernetes binaries can be verified by their digest **sha512 hash**  </summary>
   
-     - checking the Kubernetes release page for the specific release
-     - checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
+     - Checking the Kubernetes release page for the specific release
+     - Checking the change log for the [images and their digests](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.19.md#downloads-for-v1191)
 
      </details>
 
@@ -143,7 +142,7 @@ Offical exam objectives you review and understand in order to pass the test.
      serviceAccountName: default
      automountServiceAccountToken: false
    ```
-   
+
    </details>
 
 
@@ -157,8 +156,8 @@ Offical exam objectives you review and understand in order to pass the test.
  
    * [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
    * [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
-   * [PSP pod security policy enforces ](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
-   * apply host updates
+   * [PSP enforces](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+   * Apply host updates
    * Install minimal required OS fingerprint
    * Protect access to data with permissions
      *  [Restirct allowed hostpaths](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
@@ -187,8 +186,6 @@ Offical exam objectives you review and understand in order to pass the test.
        - namespaceSelector: {}
      ```
      
-     
- 
     </details>
  
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
@@ -210,13 +207,12 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. Minimize base image footprint
 
-   <details><summary> :clipboard: minimize base Image </summary>
+   <details><summary> :clipboard: Minimize base Image </summary>
   
    * Use distroless, UBI minimal, Alpine, or relavent to your app nodejs, python but the minimal build.
-   * Do not include uncessary software not required for container during runtime
-     - e.g build tools and utilities, troubleshooting and debug binaries.
-       * :triangular_flag_on_post: [Learnk8s smaller docker images blog](https://learnk8s.io/blog/smaller-docker-images)
-       * :triangular_flag_on_post: [GKE 7 best practices for building containers](https://cloud.google.com/blog/products/gcp/7-best-practices-for-building-containers)
+   * Do not include uncessary software not required for container during runtime e.g build tools and utilities, troubleshooting and debug binaries.
+     * :triangular_flag_on_post: [Learnk8s: 3 simple tricks for smaller Docker images](https://learnk8s.io/blog/smaller-docker-images)
+      * :triangular_flag_on_post: [GKE 7 best practices for building containers](https://cloud.google.com/blog/products/gcp/7-best-practices-for-building-containers)
 
    </details>
 
@@ -237,7 +233,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
    <details><summary> :clipboard:  Attack Phases </summary>
   
-     - :triangular_flag_on_post:[Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
+     - :triangular_flag_on_post: [Kubernetes attack martix Microsoft blog](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/)
      - :triangular_flag_on_post: [MITRE attack framwork using Falco](https://sysdig.com/blog/mitre-attck-framework-for-container-runtime-security-with-sysdig-falco/)
      - :triangular_flag_on_post: [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques]()
      - :triangular_flag_on_post: [CNCF Webinar: Mitigating Kubernetes attacks](https://www.cncf.io/webinars/mitigating-kubernetes-attacks/)
@@ -246,8 +242,8 @@ Offical exam objectives you review and understand in order to pass the test.
 
 4. Perform deep analytical investigation and identification of bad actors within the environment
    - [Sysdig documentation](https://docs.sysdig.com/)
-f   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
-   - :triangular_flag_on_post:[CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
+   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/monitoring-kubernetes-with-sysdig/)
+   - :triangular_flag_on_post: [CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 5. [Ensure immutability of containers at runtime](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/)
 6. [Use Audit Logs to monitor access](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)
 
@@ -273,14 +269,13 @@ f   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/mon
 
 ### Containers and Kubernetes Security Training
 
-1. [Killer.sh CKS practice exam](https://killer.sh/cks)       &#x27F9; use code **walidshaari** for **20%** discount
-1. [Udemy Kubernetes CKS 2020 Complete Course and killer.sh Simulator](https://www.udemy.com/course/certified-kubernetes-security-specialist/)  - Special discount code **CKS-KILLER-SHELL** valid till 3rd Dec 2020
+1. [Killer.sh CKS practice exam](https://killer.sh/cks) - use code **walidshaari** for **20%** discount.
 1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/) -  available January 8, 2021.
 1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
 1. Zeal Vora's Udemy [ Certified Kubernetes Security Specialist 2021 ](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/?referralCode=F38A7E4C09BFEC7E3C58) - Link includes a discount till 28th January 2021
 1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
 1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
-    - [hands-on tutorial](https://tutorial.kubernetes-security.info/)
+    - [Hands-on Tutorial](https://tutorial.kubernetes-security.info/)
 1. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
 1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 
@@ -288,6 +283,6 @@ f   - [Monitoring Kubernetes with sysdig](https://kubernetes.io/blog/2015/11/mon
 
 1. [Stackrox CKS study guide](https://github.com/stackrox/Kubernetes_Security_Specialist_Study_Guide) - Brief and informative study guide from [Stackrox @mfosterrox](https://www.stackrox.com/authors/mfoster/)
 1. [Kim's CKS Challenge series](https://github.com/killer-sh/cks-challenge-series) - also posted on medium @ https://wuestkamp.medium.com/
-1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist) - CKS repository
-1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)  - CKS  repository
-1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist) - CKS  repository
+1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist)
+1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)
+1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist)
