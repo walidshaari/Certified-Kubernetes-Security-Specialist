@@ -1,0 +1,1 @@
+kubeadm join cluster-master:6443 --token wxnidi.3sheyw4kjtrw2pbi     --discovery-token-ca-cert-hash sha256:c80e54d13e8f1b1f4a277a22df60cb3693f362b3ab9649df6699751decd80072 

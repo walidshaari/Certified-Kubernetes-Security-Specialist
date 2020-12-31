@@ -1,0 +1,4 @@
+---
+- include_tasks: 01-install.yml
+- include_tasks: 02-config.yml
+- include_tasks: 03-service.yml
