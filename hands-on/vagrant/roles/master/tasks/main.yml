@@ -19,3 +19,7 @@
 - name: Deploy flannel to cluster
   shell: kubectl --kubeconfig /home/vagrant/.kube/config create -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
   when: network == "flannel"
+
+- name: Deploy Calico to cluster
+  shell: kubectl --kubeconfig /home/vagrant/.kube/config create -f https://docs.projectcalico.org/manifests/calico.yaml
+  when: network == "calico"
