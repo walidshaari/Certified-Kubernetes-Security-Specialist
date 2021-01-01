@@ -16,6 +16,7 @@ Vagrant.configure("2") do |config|
             ansible.extra_vars = {
                 node: "master",
                 node_ip: "10.18.0.11",
+                network: "calico",
             }
         end
     end
