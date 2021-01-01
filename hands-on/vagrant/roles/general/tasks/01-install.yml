@@ -1,0 +1,83 @@
+- name: Update and upgrade apt packages
+  apt:
+    upgrade: dist
+    update_cache: yes
+
+- name: Install required package
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg-agent
+      - software-properties-common
+    state: present
+    update_cache: yes
+
+- name: Copy bridge configuration
+  template:
+    src: templates/kubernetes.conf.j2
+    dest: "/etc/sysctl.d/kubernetes.conf"
+
+- name: Update sysctl configuration
+  shell: sysctl --system
+
+- name: Add an apt signing key for Docker
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Add apt repository for stable version
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+    state: present
+
+- name: Install docker and its dependecies
+  apt: 
+    name: docker-ce
+    state: present
+    update_cache: yes
+
+- name: Copy docker configuration
+  template:
+    src: templates/daemon.json.j2
+    dest: "/etc/docker/ddaemon.json"
+
+- name: Add vagrant users to docker group
+  user:
+    name: vagrant
+    groups: docker
+    append: yes
+
+- name: Remove swapfile
+  mount:
+    name: "{{ item }}"
+    fstype: swap
+    state: absent
+  with_items:
+    - swap
+    - none
+
+- name: Disable swap
+  shell: swapoff -a
+
+- name: Add an apt signing key for Kubernetes
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+
+- name: Adding apt repository for Kubernetes
+  apt_repository:
+    repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+    state: present
+    filename: kubernetes.list
+
+- name: Install Kubernetes binaries
+  apt: 
+    name: "{{ item }}={{ k8s_version }}-00"
+    state: present
+    update_cache: yes
+  with_items:
+    - kubelet
+    - kubeadm
+    - kubectl

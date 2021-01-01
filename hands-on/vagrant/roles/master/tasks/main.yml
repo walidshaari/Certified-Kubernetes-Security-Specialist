@@ -1,0 +1,25 @@
+---
+- name: Initialize the cluster using kubeadm
+  shell: kubeadm init --control-plane-endpoint="cluster-master:6443" --node-name {{ ansible_hostname }} --pod-network-cidr=192.168.0.0/16
+
+- name: Setup cluster config on master node
+  shell: |
+    mkdir -p /home/vagrant/.kube
+    cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
+    chown vagrant:vagrant /home/vagrant/.kube/config
+
+- name: Generate join command
+  command: kubeadm token create --print-join-command
+  register: join_command
+
+- name: Copy join command
+  local_action: copy content="{{ join_command.stdout_lines[0] }}" dest="./join"
+  become: false
+
+- name: Deploy flannel to cluster
+  shell: kubectl --kubeconfig /home/vagrant/.kube/config create -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+  when: network == "flannel"
+
+- name: Deploy Calico to cluster
+  shell: kubectl --kubeconfig /home/vagrant/.kube/config create -f https://docs.projectcalico.org/manifests/calico.yaml
+  when: network == "calico"

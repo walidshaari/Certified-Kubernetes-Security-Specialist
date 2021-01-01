@@ -1,0 +1,31 @@
+- name: Load overlay and br_netfilter modules
+  shell: |
+    modprobe overlay
+    modprobe br_netfilter
+
+- name: Copy bridge configuration
+  template:
+    src: templates/kubernetes.conf.j2
+    dest: "/etc/sysctl.d/kubernetes.conf"
+
+- name: Update sysctl configuration
+  shell: sysctl --system
+
+- name: Copy docker configuration
+  template:
+    src: templates/daemon.json.j2
+    dest: "/etc/docker/ddaemon.json"
+
+- name: Add DNS alias to each node
+  shell: |
+    cat >> /etc/hosts <<EOF
+    10.18.0.11 cluster-master
+    10.18.0.12 cluster-worker1
+    10.18.0.13 cluster-worker2
+    EOF
+
+- name: Fix kubelet IP
+  shell: echo 'Environment="KUBELET_EXTRA_ARGS=--node-ip={{ node_ip }}"' | tee -a /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+
+- name: Clear memory cache
+  shell: sync; echo 3 > /proc/sys/vm/drop_caches 
