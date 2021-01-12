@@ -1,4 +1,4 @@
-# Generic Kubernetes and containers secuirty:
+# Generic Kubernetes and containers security:
 
 This is an extra resources related to security topic for Kubernetes to keep your cluster is up-to-date and more secure.
 
