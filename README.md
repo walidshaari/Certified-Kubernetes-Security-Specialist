@@ -256,6 +256,10 @@ Offical exam objectives you review and understand in order to pass the test.
 1. [Kubernetes Community - #cks-exam-prep](https://kubernetes.slack.com)
 1. [Kubernauts Community - #cks](https://kubernauts-slack-join.herokuapp.com/)
 
+### Twitch
+
+1. [KubeNativeSecurity twitch stream Talk Shows & Podcasts](https://www.twitch.tv/kubenativesecurity)
+
 ### Books
 
 1. [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
