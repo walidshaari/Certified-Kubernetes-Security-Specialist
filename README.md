@@ -12,7 +12,7 @@ Online curated resources that will help you prepare for taking the Kubernetes Ce
 
 Resources are primarly cross referenced back to the [allowed CKS sites](#urls-allowed-in-the-extra-single-tab) during the exam as per CNCF/Linux Foundation exam allowed search rules. Videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.19 as of 17th Nov GA announcement) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
+Ensure you have the right version of Kubernetes documentation selected (e.g. v1.20 as of 22 January 2021) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
 
 * Icons/emoji legend
   - :clipboard:  Expand to see more content
@@ -25,7 +25,7 @@ Ensure you have the right version of Kubernetes documentation selected (e.g. v1.
 
 Offical exam objectives you review and understand in order to pass the test.
 
-* [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/blob/master/CKS_Curriculum_%20v1.19.pdf)
+* [CNCF Exam Curriculum repository ](https://github.com/cncf/curriculum/)
 
 - Duration : two (2) hours
 - Number of questions: 15-20 hands-on performance based tasks
