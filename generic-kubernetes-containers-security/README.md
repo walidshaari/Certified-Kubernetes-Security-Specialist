@@ -1,4 +1,4 @@
-# Kubernetes
+# Generic Kubernetes and containers security:
 
 This is an extra resources related to security topic for Kubernetes to keep your cluster is up-to-date and more secure.
 
@@ -27,8 +27,9 @@ This is an extra resources related to security topic for Kubernetes to keep your
 1. [CNCF Webinar: Getting started with container runtime security using Falco](https://youtu.be/VEFaGjfjfyc)
 1. [Lightboard video: Kubernetes attack matrix - 3 steps to mitigating the MITRE ATT&CK Techniques](https://www.youtube.com/watch?v=0fnWu06eQCU)
 
-### White Papers
+### Publications
 1. [CNCF cloud-native security white paper Nov 2020](https://github.com/cncf/sig-security/blob/master/security-whitepaper/CNCF_cloud-native-security-whitepaper-Nov2020.pdf)
+1. [Free O'Reilly Kubernetes security book compliments of Aqua](https://info.aquasec.com/kubernetes-security) - by Liz Rice and Michael Hausenblas
 
 ### Books
 
