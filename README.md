@@ -39,9 +39,9 @@ Offical exam objectives you review and understand in order to pass the test.
 
 ## URLs allowed in the extra single tab
 From Chrome or Chromium browser to open one (1) additional tab in order to access Kubernetes Documentation: 
-- https://kubernetes.io/docs and their subdomains
+- https://kubernetes.io and their subdomains
 - https://github.com/kubernetes and their subdomains
-- https://kubernetes.io/blog and their subdomains
+- [Trivy](https://github.com/aquasecurity/trivy)
 - [Sysdig documentation](https://docs.sysdig.com)
 - [Falco documentation](https://falco.org/docs)
 - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
