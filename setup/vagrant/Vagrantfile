@@ -1,0 +1,40 @@
+nodes=[
+  {
+    :hostname => "cluster-master",
+    :ip => "10.20.0.11",
+    :box => "ubuntu/bionic64",
+    :ram => 4096,
+    :cpu => 2
+  },
+  {
+    :hostname => "cluster-worker1",
+    :ip => "10.20.0.12",
+    :box => "ubuntu/bionic64",
+    :ram => 2048,
+    :cpu => 2
+  }
+  {
+    :hostname => "cluster-worker2",
+    :ip => "10.20.0.13",
+    :box => "ubuntu/bionic64",
+    :ram => 2048,
+    :cpu => 2
+  }
+]
+
+Vagrant.configure(2) do |config|
+    nodes.each do |machine|
+        config.vm.define machine[:hostname] do |node|
+            node.vm.box = machine[:box]
+            node.vm.hostname = machine[:hostname]
+            node.vm.network "private_network", ip: machine[:ip]
+            node.vm.provider "virtualbox" do |vb|
+                vb.customize ["modifyvm", :id, "--memory", machine[:ram]]
+            end
+            node.vm.provision "ansible" do |ansible|
+                ansible.playbook = "../playbook/main.yml"
+                ansible.extra_vars = { node_ip: machine[:ip]}
+            end
+        end
+    end
+end
