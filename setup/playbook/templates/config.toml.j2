@@ -1,0 +1,5 @@
+disabled_plugins = ["restart"]
+[plugins.linux]
+  shim_debug = true
+[plugins.cri.containerd.runtimes.runsc]
+  runtime_type = "io.containerd.runsc.v1"

@@ -1,0 +1,89 @@
+---
+- name: Install required package
+  apt:
+    name:
+      - software-properties-common
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg-agent
+      - dnsmasq
+    state: present
+    update_cache: yes
+
+- name: Load modules needed
+  community.general.modprobe:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - overlay
+    - br_netfilter
+    - ip_conntrack
+
+- name: Remove swapfile
+  mount:
+    name: "{{ item }}"
+    fstype: swap
+    state: absent
+  with_items:
+    - swap
+    - none
+
+- name: Disable swap
+  shell: swapoff -a
+  changed_when: false
+
+- name: Update sysctl config
+  sysctl:
+    name: "{{ item.name }}"
+    value: "{{ item.value }}"
+    sysctl_set: yes
+    reload: yes
+    state: present
+  with_items:
+    - { name: "net.ipv4.ip_forward", value: "1"}
+    - { name: "net.bridge.bridge-nf-call-ip6tables", value: "1"}
+    - { name: "net.bridge.bridge-nf-call-iptables", value: "1"}
+    - { name: "net.netfilter.nf_conntrack_max", value: "1000000"}
+
+- name: Add kubernetes GPG key 
+  apt_key:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    state: present
+
+- name: Add kubernetes repository to APT sources
+  apt_repository:
+    repo: deb http://apt.kubernetes.io/ kubernetes-xenial main
+    state: present
+
+- name: Install Kubernetes tools
+  apt:
+    name:
+      - kubeadm={{ KUBERNETES_VERSION }}-00
+      - kubelet={{ KUBERNETES_VERSION }}-00
+      - kubectl={{ KUBERNETES_VERSION }}-00
+    state: present
+
+- name: Install AppArmor
+  apt:
+    name: apparmor-utils
+    state: present
+
+- name: Add DNS alias to each node
+  shell: |
+    cat >> /etc/hosts <<EOF
+    10.20.0.11 cluster-master
+    10.20.0.12 cluster-worker1
+    10.20.0.13 cluster-worker1
+    EOF
+
+- name: Add domain to dnsmasq
+  shell: |
+    echo "nameserver {{ ansible_enp0s8.ipv4.address }}" >> /etc/resolv.conf
+    echo "address=/{{ LAB_DOMAIN }}/{{ ansible_enp0s8.ipv4.address }}" > /etc/dnsmasq.conf
+
+- name: Retart dnsmasq service
+  service:
+    name: dnsmasq
+    state: restarted
+    enabled: yes

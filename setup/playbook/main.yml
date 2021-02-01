@@ -1,0 +1,16 @@
+---
+- name: Provisioning Kubernetes Lab
+  hosts: all
+  become: yes
+  gather_facts: True
+
+  vars_files:
+    - vars/main.yml
+
+  roles:
+    - 01-common
+    - 02-runtime
+    - 03-sandbox
+    - { role: 04-master, when: ansible_hostname.find("master") != -1 }
+    - { role: 04-worker, when: ansible_hostname.find("worker") != -1 }
+    - { role: 05-utility, when: ansible_hostname.find("master") != -1 }

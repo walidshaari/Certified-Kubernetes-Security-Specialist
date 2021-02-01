@@ -1,0 +1,10 @@
+---
+- name: Copy join command to worker node
+  copy:
+    src: "{{ playbook_dir }}/join"
+    dest: /tmp/join
+    mode: 0755
+
+- name: Join the worker node to cluster
+  shell: bash /tmp/join
+  changed_when: false

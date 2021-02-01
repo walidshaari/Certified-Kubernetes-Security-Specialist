@@ -1,3 +1,0 @@
----
-k8s_version: "1.19.1"
-network: "flannel"

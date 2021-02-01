@@ -1,0 +1,26 @@
+---
+- name: Add CRI-O repository
+  apt_repository:
+    repo: ppa:projectatomic/ppa
+    state: present
+
+- name: Install CRI-O
+  apt:
+    name: "cri-o-1.15"
+    state: present
+    update_cache: yes
+
+- name: Update CRI-O config
+  shell: | 
+    sed -i 's|/usr/libexec/crio/conmon|/usr/bin/conmon|g' /etc/crio/crio.conf
+    sed -i '258s/.*/registries = ["quay.io","docker.io"]/' /etc/crio/crio.conf
+
+- name: Add kubelet config
+  shell: echo 'KUBELET_EXTRA_ARGS=--feature-gates="AllAlpha=false,RunAsGroup=true" --container-runtime=remote --cgroup-driver=systemd --container-runtime-endpoint="unix:///var/run/crio/crio.sock" --runtime-request-timeout=5m --node-ip={{ ansible_eth1.ipv4.address }}' > /etc/default/kubelet
+  
+- name: Start cri-o service
+  service:
+    name: crio
+    state: started
+    enabled: yes
+    daemon_reload: yes

@@ -1,0 +1,26 @@
+---
+- name: Add gvisor GPG key 
+  apt_key:
+    url: "https://gvisor.dev/archive.key"
+    state: present
+
+- name: Add gvisor repository to APT sources
+  apt_repository:
+    repo: "deb https://storage.googleapis.com/gvisor/releases release main"
+    state: present
+
+- name: Install gVisor
+  apt:
+    name: runsc
+    state: present
+    update_cache: yes
+
+- name: Copy containerd config
+  template:
+    src: templates/config.toml.j2
+    dest: /etc/containerd/config.toml
+
+- name: Restart containerd service
+  service:
+    name: containerd
+    state: restarted

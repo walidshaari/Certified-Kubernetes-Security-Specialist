@@ -1,0 +1,46 @@
+---
+- name: Install crictl
+  unarchive:
+    src: https://github.com/kubernetes-sigs/cri-tools/releases/download/v1.13.0/crictl-v1.13.0-linux-amd64.tar.gz
+    dest: /usr/local/bin
+    remote_src: yes
+
+- name: Add crictl config
+  shell: 'echo "runtime-endpoint: unix:///run/containerd/containerd.sock" > /etc/crictl.yaml'
+
+- name: Install kube-bench, docker-bench & trivy
+  apt:
+    deb: "{{ item }}"
+  with_items:
+    - https://github.com/aquasecurity/kube-bench/releases/download/v{{ KUBE_BENCH_VERSION }}/kube-bench_{{ KUBE_BENCH_VERSION }}_linux_amd64.deb
+    - https://github.com/aquasecurity/trivy/releases/download/v{{ TRIVY_VERSION }}/trivy_{{ TRIVY_VERSION }}_Linux-64bit.deb
+    - https://github.com/aquasecurity/docker-bench/releases/download/v{{ DOCKER_BENCH_VERSION }}/docker-bench_{{ DOCKER_BENCH_VERSION }}_linux_amd64.deb
+
+- name: Install Bane
+  get_url:
+    url: https://github.com/genuinetools/bane/releases/download/v0.4.4/bane-linux-amd64
+    dest: /usr/local/bin
+    mode: 0755
+
+- name: Add falco GPG key 
+  apt_key:
+    url: https://falco.org/repo/falcosecurity-3672BA8F.asc
+    state: present
+
+- name: Add falco repository to APT sources
+  apt_repository:
+    repo: deb https://dl.bintray.com/falcosecurity/deb stable main
+    state: present
+
+- name: Install falco
+  apt:
+    name: falco
+    state: present
+    update_cache: yes
+
+- name: Start falco service
+  service:
+    name: falco
+    state: started
+    enabled: yes
+    daemon_reload: yes

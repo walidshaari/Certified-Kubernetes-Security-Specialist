@@ -1,0 +1,48 @@
+---
+- name: Initialize a kubernetes control-plane
+  shell: kubeadm init --kubernetes-version {{ KUBERNETES_VERSION }} --apiserver-advertise-address {{ ansible_enp0s8.ipv4.address }} --pod-network-cidr 192.168.0.0/16 --control-plane-endpoint="{{ ansible_hostname }}:6443" --node-name {{ ansible_hostname }}
+
+- name: Creates .kube directory
+  file:
+    path: /home/vagrant/.kube
+    state: directory
+
+- name: Copy kube config
+  shell: cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
+
+- name: Grant permissions to .kube directory
+  file:
+    dest: /home/vagrant/.kube
+    owner: vagrant
+    group: vagrant 
+    recurse: yes
+
+- name: Generate kubeadm join command
+  command: kubeadm token create --print-join-command
+  register: join_command
+
+- name: Copy kubeadm join command
+  local_action: copy content="{{ join_command.stdout_lines[0] }}" dest="{{ playbook_dir }}/join"
+  become: false
+
+- name: Install calicoctl
+  get_url:
+    url: https://github.com/projectcalico/calicoctl/releases/download/v3.17.1/calicoctl
+    dest: /usr/local/bin
+    mode: 0755
+
+- name: Download Helm 3
+  get_url: 
+    url: https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
+    dest: /tmp/get_helm.sh
+    mode: 0755
+
+- name: Install Helm 3
+  shell: bash /tmp/get_helm.sh
+
+- name: Install Calico, NGINX controller
+  become: yes
+  become_user: vagrant
+  shell: |
+    kubectl taint nodes --all node-role.kubernetes.io/master-
+    kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml

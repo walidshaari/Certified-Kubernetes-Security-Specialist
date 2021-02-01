@@ -1,0 +1,5 @@
+---
+- include_tasks: docker.yml
+  when: CONTAINER_RUNTIME == "docker"
+- include_tasks: crio.yml
+  when: CONTAINER_RUNTIME == "crio"

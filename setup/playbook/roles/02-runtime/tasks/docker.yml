@@ -1,0 +1,28 @@
+---
+- name: Add docker GPG key 
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg 
+    state: present
+
+- name: Add docker repository to APT sources
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+    state: present
+
+- name: Install docker community edition
+  apt:
+    name: ["docker-ce=5:{{ DOCKER_VERSION }}*", "docker-ce-cli=5:{{ DOCKER_VERSION }}*"]
+    state: present
+    update_cache: yes
+
+- name: Copy docker config
+  template:
+    src: templates/daemon.json.j2
+    dest: /etc/docker/daemon.json
+
+- name: Restart docker service
+  service:
+    name: docker
+    state: restarted
+    enabled: yes
+    daemon_reload: yes
