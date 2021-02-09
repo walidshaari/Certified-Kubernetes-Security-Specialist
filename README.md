@@ -264,6 +264,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. [Aqua Security Liz Rice:Free Container Security Book](https://info.aquasec.com/container-security-book)
 1. [Learn Kubernetes security: Securely orchestrate, scale, and manage your microservices in Kubernetes deployments](https://www.amazon.com/Learn-Kubernetes-Security-orchestrate-microservices/dp/1839216506)
+1. [Let's Learn CKS Scenarios](https://gumroad.com/l/cksbook)
 
 ### Youtube Videos
 
