@@ -255,6 +255,8 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. [Kubernetes Community - #cks-exam-prep](https://kubernetes.slack.com)
 1. [Kubernauts Community - #cks](https://kubernauts-slack-join.herokuapp.com/)
+2. [Saiyam's Pathak OpenSource Discord #CKS channel](https://discord.gg/9PQBYKntPR)
+
 
 ### Twitch
 
@@ -277,13 +279,14 @@ Offical exam objectives you review and understand in order to pass the test.
 1. [Killer.sh CKS practice exam](https://killer.sh/cks) - use code **walidshaari** for **20%** discount.
 1. UDEMY Kim Wüstkamp's [Kubernetes CKS 2021 Complete Course with killer.sh Simulator **(discounted price)**](https://killer.sh/r?d=cks-course)
 1. [Linux Foundation Kubernetes Security essentials LFS 260](https://training.linuxfoundation.org/training/kubernetes-security-essentials-lfs260/)
-1. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
-1. Zeal Vora's Udemy [ Certified Kubernetes Security Specialist 2021 ](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/?referralCode=F38A7E4C09BFEC7E3C58) - Link includes a discount till 28th January 2021
-1. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
-1. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
+2. [Mumshad's KodeCloud "Certified Kubernetes Security Specialist" CKS and training and labs](https://kodekloud.com/p/certified-kubernetes-security-specialist-cks)
+3. [Linux Academy/ACloudGuru Kubernetes security](https://acloud.guru/learn/7d2c29e7-cdb2-4f44-8744-06332f47040e)
+4. Zeal Vora's Udemy [ Certified Kubernetes Security Specialist 2021 ](https://www.udemy.com/course/certified-kubernetes-security-specialist-certification/?referralCode=F38A7E4C09BFEC7E3C58) - Link includes a discount till 28th January 2021
+5. [Cloud native security defending containers and kubernetes](https://www.sans.org/event/stay-sharp-blue-team-ops-and-cloud-dec-2020/course/cloud-native-security-defending-containers-kubernetes)
+6. [Tutorial: Getting Started With Cloud-Native Security - Liz Rice, Aqua Security & Michael Hausenblas](https://youtu.be/MisS3wSds40)
     - [Hands-on Tutorial](https://tutorial.kubernetes-security.info/)
-1. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
-1. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
+7. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
+8. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 
 #### Other CKS related repos
 
