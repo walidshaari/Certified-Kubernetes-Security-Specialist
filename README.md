@@ -186,7 +186,30 @@ Offical exam objectives you review and understand in order to pass the test.
        - namespaceSelector: {}
      ```
      
-    </details>
+    
+    
+    * Or if trying to block pods workloads on cluster nodes access to senstive cloud metadata server
+
+   ```yaml
+   apiVersion: networking.k8s.io/v1
+
+kind: NetworkPolicy
+metadata:
+  name: metadata-server-deny
+  # specify namespace required
+spec:
+  podSelector: {}
+  policyTypes:
+  - Egress
+  egress:
+  - to:
+    - ipBlock:
+        cidr: 0.0.0.0/0    
+        except: 
+        - 169.254.169.254 # Cloud metadata server IP
+    ```
+   
+  </details>
  
 4. Appropriately use kernel hardening tools such as AppArmor, seccomp
    * [AppArmor](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
