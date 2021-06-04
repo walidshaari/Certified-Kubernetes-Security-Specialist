@@ -288,6 +288,7 @@ Offical exam objectives you review and understand in order to pass the test.
     - [Hands-on Tutorial](https://tutorial.kubernetes-security.info/)
 7. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
 8. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
+9. [Free Exam simulators from killer.sh available with CKS certification from Linux Foundation](https://training.linuxfoundation.org/announcements/linux-foundation-kubernetes-certifications-now-include-exam-simulator/)
 
 #### Other CKS related repos
 
