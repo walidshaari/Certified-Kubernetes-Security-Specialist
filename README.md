@@ -32,7 +32,7 @@ Offical exam objectives you review and understand in order to pass the test.
 - Passing score: 67%
 - Certification validity: two (2) years
 - Prerequisite: valid CKA
-- Cost: $300 USD, One (1) year exam eligibility, with a free retake within the year.
+- Cost: $375 USD, One (1) year exam eligibility, with a free retake within the year.
 
   *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
 
