@@ -227,7 +227,7 @@ Offical exam objectives you review and understand in order to pass the test.
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
 	- [Falco installation guide](https://falco.org/docs/)
 	- :triangular_flag_on_post: [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
-	- :triangular_flag_on_post: [Falco Kubernetes manifests](https://github.com/falcosecurity/evolution/tree/master/deploy/kubernetes/kernel-and-k8s-audit)
+	- :triangular_flag_on_post: [Falco Kubernetes helmchart](https://github.com/falcosecurity/charts)
 	- :triangular_flag_on_post: [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
 2. Detect threats within a physical infrastructure, apps, networks, data, users and workloads
 3. Detect all phases of attack regardless where it occurs and how it spreads
