@@ -297,3 +297,4 @@ Offical exam objectives you review and understand in order to pass the test.
 1. [Abdennour](https://github.com/abdennour/certified-kubernetes-security-specialist)
 1. [Ibrahim Jelliti](https://github.com/ijelliti/CKSS-Certified-Kubernetes-Security-Specialist)
 1. [Viktor Vedmich](https://github.com/vedmichv/CKS-Certified-Kubernetes-Security-Specialist)
+1. [Kubernetes Security Checklist and Requirements](https://github.com/Vinum-Security/kubernetes-security-checklist)
