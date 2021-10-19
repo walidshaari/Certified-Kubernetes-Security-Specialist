@@ -12,7 +12,7 @@ Online curated resources that will help you prepare for taking the Kubernetes Ce
 
 Resources are primarly cross referenced back to the [allowed CKS sites](#urls-allowed-in-the-extra-single-tab) during the exam as per CNCF/Linux Foundation exam allowed search rules. Videos and other third party resources e.g. blogs will be provided as an optional complimentary material and any 3rd party material not allowed in the exam will be designated with :triangular_flag_on_post: in the curriculum sections below.
 
-Ensure you have the right version of Kubernetes documentation selected (e.g. v1.20 as of 22 January 2021) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
+Ensure you have the right version of Kubernetes documentation selected (e.g. v1.21 as of 19 October 2021) especially for API objects and annotations, however for third party tools, you might find that you can still find references for them in old releases and blogs [e.g. Falco install](https://github.com/kubernetes/website/issues/24184).
 
 * Icons/emoji legend
   - :clipboard:  Expand to see more content
