@@ -159,6 +159,8 @@ Offical exam objectives you review and understand in order to pass the test.
    * [PSP enforces](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
    * Apply host updates
    * Install minimal required OS fingerprint
+   * Identify and address open ports
+   * Remove unnecessary packages
    * Protect access to data with permissions
      *  [Restirct allowed hostpaths](https://kubernetes.io/docs/concepts/policy/pod-security-policy/#volumes-and-file-systems)
 
