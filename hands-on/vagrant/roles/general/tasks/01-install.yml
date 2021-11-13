@@ -76,6 +76,7 @@
   apt: 
     name: "{{ item }}={{ k8s_version }}-00"
     state: present
+    force: True
     update_cache: yes
   with_items:
     - kubelet
