@@ -228,6 +228,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 1. Perform behavioural analytics of syscall process and file activities at the host and container level to detect malicious activities
 	- [Falco installation guide](https://falco.org/docs/)
+	- :triangular_flag_on_post: [Sysdig Falco 101](https://learn.sysdig.com/falco-101)
 	- :triangular_flag_on_post: [Falco Helm Chart](https://github.com/falcosecurity/charts/tree/master/falco)
 	- :triangular_flag_on_post: [Falco Kubernetes helmchart](https://github.com/falcosecurity/charts)
 	- :triangular_flag_on_post: [Detect CVE-2020-8557 using Falco](https://falco.org/blog/detect-cve-2020-8557/)
@@ -291,6 +292,7 @@ Offical exam objectives you review and understand in order to pass the test.
 7. [K21 academy CKS step by step activity hands-on-lab activity guide](https://k21academy.com/docker-kubernetes/certified-kubernetes-security-specialist-cks-step-by-step-activity-guide-hands-on-lab)
 8. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 9. [Free Exam simulators from killer.sh available with CKS certification from Linux Foundation](https://training.linuxfoundation.org/announcements/linux-foundation-kubernetes-certifications-now-include-exam-simulator/)
+10. [Sysdig Falco 101](https://learn.sysdig.com/falco-101)
 
 #### Other CKS related repos
 
