@@ -293,6 +293,7 @@ Offical exam objectives you review and understand in order to pass the test.
 8. [Andrew Martin Control Plane Security training](https://control-plane.io/training/)
 9. [Free Exam simulators from killer.sh available with CKS certification from Linux Foundation](https://training.linuxfoundation.org/announcements/linux-foundation-kubernetes-certifications-now-include-exam-simulator/)
 10. [Sysdig Falco 101](https://learn.sysdig.com/falco-101)
+11. [Killercoda in-browser CKS Playground and Challenges](https://killercoda.com/killer-shell-cks) - FREE
 
 #### Other CKS related repos
 
