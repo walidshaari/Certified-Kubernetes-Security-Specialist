@@ -46,7 +46,6 @@ Offical exam objectives you review and understand in order to pass the test.
   This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs)
   - Tools:
     - [Trivy documentation](https://github.com/aquasecurity/trivy)
-    - [Sysdig documentation](https://docs.sysdig.com)
     - [Falco documentation](https://falco.org/docs)
     - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
 
