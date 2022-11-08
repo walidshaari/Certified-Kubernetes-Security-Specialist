@@ -4,6 +4,6 @@ networking:
   disableDefaultCNI: true
 nodes:
 - role: control-plane
-- role: worker
-- role: worker
-- role: worker
+- role: worker-1
+- role: worker-2
+- role: worker-3
