@@ -155,7 +155,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
    * [seccomp which stands for secure computing was originally intended as a means of safely running untrusted compute-bound programs](https://kubernetes.io/docs/tutorials/clusters/seccomp/)
    * [AppArmor can be configured for any application to reduce its potential host attack surface and provide greater in-depth defense.](https://kubernetes.io/docs/tutorials/clusters/apparmor/)
-   * [PSP enforces](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
+   * [PSA enforces](https://kubernetes.io/docs/concepts/security/pod-security-admission/)
    * Apply host updates
    * Install minimal required OS fingerprint
    * Identify and address open ports
@@ -195,7 +195,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
 ### Minimize Microservice Vulnerabilities - 20%
 
-1. Setup appropriate OS-level security domains e.g. using PSP, OPA, security contexts
+1. Setup appropriate OS-level security domains e.g. using PSA, OPA, security contexts
    - [Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
    - [Open Policy Agent](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
    - [Security Contexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
