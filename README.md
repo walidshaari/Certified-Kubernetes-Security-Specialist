@@ -36,18 +36,23 @@ Offical exam objectives you review and understand in order to pass the test.
 
   *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
 
-### URLs allowed in the extra single tab
-  - From Chrome or Chromium browser to open one additional tab in order to access
-    Kubernetes Documentation:
-    - https://kubernetes.io/docs and their subdomains
-    - https://github.com/kubernetes and their subdomains
-    - https://kubernetes.io/blog and their subdomains
+### Exam interface
+According to official Linux Foundation [documentation](https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks#cks-environment) and as of June 2022,  there was a change in the exam platform. It is just an exam platform, so the exam questions will not change, but there were a few things that seemed to concern you, so I will write them down:
 
-  This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs)
-  - Tools:
-    - [Trivy documentation](https://github.com/aquasecurity/trivy)
-    - [Falco documentation](https://falco.org/docs)
-    - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
+- A **remote desktop** configured with the tools and software needed to complete the tasks 
+- Candidates can start the “Take Exam” Process 30 minutes prior to their scheduled date/time (currently 15mins on PSI ExamsLocal platform)
+- Self check-in: no need to wait for  a proctor in order to upload your ID and scan your environment
+- The exam will now be taken using the PSI Secure Browser, which can be downloaded using the newest versions of Microsoft Edge, Safari, Chrome, or Firefox
+- Multiple monitors will no longer be permitted
+- Use of personal bookmarks will no longer be permitted (Personal browser bookmarks such as bookmarked links to YAML files will not be accessible within the PSI Secure Browser) 
+
+The new ExamUI includes improved features such as: 
+- A timer that displays the actual time remaining (in minutes) and provides an alert with 30, 15, or 5 minute remaining
+- The content panel remains the same (presented on the Left Hand Side of the ExamUI)
+
+
+
+
 
 ## CKS repo topics overview
 
