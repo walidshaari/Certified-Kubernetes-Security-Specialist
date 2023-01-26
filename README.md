@@ -36,6 +36,19 @@ Offical exam objectives you review and understand in order to pass the test.
 
   *Linux Foundation offer several discounts around the year e.g. CyberMonday, Kubecon attendees among other special holidays/events*
 
+### URLs to prepare for the exam:
+  - Kubernetes Documentation:
+    - https://kubernetes.io/docs and their subdomains
+    - https://github.com/kubernetes and their subdomains
+    - https://kubernetes.io/blog and their subdomains
+
+  This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs)
+  - Tools:
+    - [Trivy documentation](https://github.com/aquasecurity/trivy)
+    - [Falco documentation](https://falco.org/docs)
+    - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
+
+
 ### Exam interface
 According to official Linux Foundation [documentation](https://docs.linuxfoundation.org/tc-docs/certification/important-instructions-cks#cks-environment) and as of June 2022,  there was a change in the exam platform. It is just an exam platform, so the exam questions will not change, but there were a few things that seemed to concern you, so I will write them down:
 
