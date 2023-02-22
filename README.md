@@ -294,6 +294,7 @@ The new ExamUI includes improved features such as:
 1. [Google/Ian Lewis: Kubernetes security best practices](https://youtu.be/wqsUfvRyYpw)
 1. [Code in Action for the **book Learn Kubernetes Security** playlist](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB)
 1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
+1. [Webinar | Certified Kubernetes Security Specialist (CKS), January 2022](https://youtu.be/Qqoe-PbuQcs)
 
 ### Containers and Kubernetes Security Training
 
