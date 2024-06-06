@@ -214,7 +214,6 @@ The new ExamUI includes improved features such as:
 ### Minimize Microservice Vulnerabilities - 20%
 
 1. Setup appropriate OS-level security domains e.g. using PSA, OPA, security contexts
-   - [Pod Security Policies](https://kubernetes.io/docs/concepts/policy/pod-security-policy/)
    - [Open Policy Agent](https://kubernetes.io/blog/2019/08/06/opa-gatekeeper-policy-and-governance-for-kubernetes/)
    - [Security Contexts](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 2. [Manage kubernetes secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
@@ -291,6 +290,7 @@ The new ExamUI includes improved features such as:
 
 ### Youtube Videos
 
+1. [Killer Shell: Kubernetes CKS Full Course Theory + Practice + Browser Scenarios](https://youtu.be/d9xfB5qaOfg)
 1. [Google/Ian Lewis: Kubernetes security best practices](https://youtu.be/wqsUfvRyYpw)
 1. [Code in Action for the **book Learn Kubernetes Security** playlist](https://www.youtube.com/playlist?list=PLeLcvrwLe1859Rje9gHrD1KEp4y5OXApB)
 1. [Kubernetes security concepts and demos](https://youtu.be/VjlvS-qiz_U)
