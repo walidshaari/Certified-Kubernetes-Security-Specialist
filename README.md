@@ -228,7 +228,7 @@ The new ExamUI includes improved features such as:
 
    * Use distroless, UBI minimal, Alpine, or relavent to your app nodejs, python but the minimal build.
    * Do not include uncessary software not required for container during runtime e.g build tools and utilities, troubleshooting and debug binaries.
-     * :triangular_flag_on_post: [Learnk8s: 3 simple tricks for smaller Docker images](https://learnk8s.io/blog/smaller-docker-images)
+     * :triangular_flag_on_post: [LearnKube: 3 simple tricks for smaller Docker images](https://learnkube.com/blog/smaller-docker-images)
       * :triangular_flag_on_post: [GKE 7 best practices for building containers](https://cloud.google.com/blog/products/gcp/7-best-practices-for-building-containers)
 
    </details>
