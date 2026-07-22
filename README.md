@@ -44,6 +44,7 @@ Offical exam objectives you review and understand in order to pass the test.
 
   This includes all available language translations of these pages (e.g. https://kubernetes.io/zh/docs)
   - Tools:
+    - [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform covering web, API, Active Directory and Kubernetes, with proof of exploitation and a local privacy gateway.
     - [Trivy documentation](https://github.com/aquasecurity/trivy)
     - [Falco documentation](https://falco.org/docs)
     - [App Armor documentation](https://gitlab.com/apparmor/apparmor/-/wikis/Documentation)
