@@ -315,6 +315,8 @@ The new ExamUI includes improved features such as:
 11. [Killercoda in-browser CKS Playground and Challenges](https://killercoda.com/killer-shell-cks) - FREE
 12. [CKS Self-Study Course](https://rx-m.com/cks-self-study-course/) - FREE
 13. [RX-M CKS Boot Camp](https://rx-m.com/training/certified-kubernetes-security-specialist-cks-boot-camp/)
+14. :triangular_flag_on_post: [Pwned Labs - Exploit Kubernetes Overly Permissive RBAC](https://pwnedlabs.io/explore/exploit-kubernetes-overly-permissive-rbac) - FREE hands-on lab: abuse permissive RBAC to move from a foothold to node and cluster compromise, in a hosted cluster with nothing to install.
+15. :triangular_flag_on_post: [Pwned Labs - Secure Kubernetes using OPA Gatekeeper](https://pwnedlabs.io/explore/secure-kubernetes-using-opa-gatekeeper) - FREE hands-on lab: write and enforce OPA Gatekeeper admission policies (block privilege escalation, host network, hostPath), in a hosted cluster with nothing to install.
 
 #### Other CKS related repos
 
